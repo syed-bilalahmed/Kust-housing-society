@@ -1,32 +1,37 @@
 /* ========================================================
    KUST HOUSING SOCIETY - MAIN STYLESHEET
+   Official Theme: Institute of Computing (IoC) - KUST (ioc.kust.edu.pk)
+   Colors: Deep Academic Navy (#0B2545), IoC Royal Blue (#0066CC), 
+           KUST Crest Gold (#E5A823), KUST Crimson (#800020) & Pure Slate
    WhatsApp Support: +92 336 0606905
-   Aesthetics: Luxury Deep Forest Green (#0D3B2E) & Champagne Gold (#C5A869)
-   Typography: Playfair Display (Serif) & Outfit (Sans-Serif)
 ======================================================== */
 
 :root {
-  --color-primary: #0D3B2E;
-  --color-primary-dark: #09281F;
-  --color-primary-light: #144A3A;
-  --color-primary-soft: #EBF3EE;
+  --color-primary: #0B2545;
+  --color-primary-dark: #06152B;
+  --color-primary-light: #133E87;
+  --color-primary-soft: #EBF3FD;
   
-  --color-gold: #C5A869;
-  --color-gold-hover: #B8934A;
-  --color-gold-light: #F4EEDF;
-  --color-gold-dark: #8F6F2C;
+  --color-accent-blue: #0066CC;
+  --color-accent-cyan: #0284C7;
+  --color-maroon: #800020;
+  
+  --color-gold: #E5A823;
+  --color-gold-hover: #CA8A04;
+  --color-gold-light: #FEF3C7;
+  --color-gold-dark: #B45309;
 
-  --color-bg-main: #FBF9F5;
+  --color-bg-main: #F8FAFC;
   --color-bg-card: #FFFFFF;
-  --color-bg-secondary: #F4EFE6;
+  --color-bg-secondary: #F1F5F9;
 
-  --color-text-main: #182320;
-  --color-text-muted: #5A6964;
-  --color-text-light: #8E9C98;
+  --color-text-main: #0F172A;
+  --color-text-muted: #475569;
+  --color-text-light: #94A3B8;
   --color-white: #FFFFFF;
 
-  --border-light: #E4DED3;
-  --border-subtle: #EDE8DE;
+  --border-light: #CBD5E1;
+  --border-subtle: #E2E8F0;
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
