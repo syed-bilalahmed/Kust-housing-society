@@ -30,6 +30,8 @@
       <div class="top-bar-right">
         <span class="badge-tag">TMA / RDA Approved</span>
         <span class="divider">|</span>
+        <button class="top-calc-btn" onclick="openWelcomeModal()" style="color:#38BDF8;display:inline-flex;align-items:center;gap:4px;"><span class="status-online-dot"></span> Welcome to KHS Window</button>
+        <span class="divider">|</span>
         <button class="top-calc-btn" onclick="openCalcModal()">Installment Calculator</button>
       </div>
     </div>
@@ -137,6 +139,9 @@
               <button class="btn btn-glass" onclick="switchPage('masterplan')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-1"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
                 View Master Plan
+              </button>
+              <button class="btn btn-glass-blue" onclick="openWelcomeModal()">
+                <span class="status-online-dot"></span> Welcome to KHS Window
               </button>
             </div>
 
@@ -1762,55 +1767,99 @@
     </div>
   </div>
 
-  <!-- ================= WELCOME LANDING POPUP MODAL ================= -->
+  <!-- ================= WELCOME WINDOW MODEL POPUP: WELCOME TO KHS - KUST HOUSING SOCIETY ================= -->
   <div class="modal-backdrop welcome-modal-backdrop" id="welcomeModal">
-    <div class="modal-card welcome-modal-card">
-      <button class="modal-close welcome-close-btn" onclick="closeWelcomeModal()" aria-label="Close welcome offer">&times;</button>
-      <div class="welcome-modal-grid">
-        <div class="welcome-img-col">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="KUST Housing Society Entrance" class="welcome-side-img">
-          <div class="welcome-img-badge">
-            <span class="pulse-ring"></span>
-            <strong>PHASE 1 OPEN</strong>
-            <small>Limited 5 & 10 Marla Plots</small>
+    <div class="welcome-window-card">
+      <!-- Window Title Bar with Traffic Controls -->
+      <div class="window-titlebar">
+        <div class="window-controls">
+          <span class="window-dot dot-red" onclick="closeWelcomeModal()" title="Close Window"></span>
+          <span class="window-dot dot-yellow" onclick="closeWelcomeModal()" title="Minimize"></span>
+          <span class="window-dot dot-green" onclick="showToast('KHS Portal window maximized.')" title="Maximize"></span>
+        </div>
+        <div class="window-title-text">
+          <span>🏛️</span>
+          <span>Welcome to KHS — KUST Housing Society [Official Portal]</span>
+        </div>
+        <div class="window-status">
+          <span class="status-online-dot"></span>
+          <span>Online Desk</span>
+        </div>
+      </div>
+
+      <!-- Window Sub-menubar Strip -->
+      <div class="window-menubar">
+        <span class="window-menu-pill">📍 Near KUST Campus</span>
+        <span class="window-menu-pill">⭐ TMA &amp; RDA Approved</span>
+        <span class="window-menu-pill">🎓 15% Academic &amp; Faculty Quota</span>
+        <a href="https://wa.me/923360606905" target="_blank" rel="noopener" class="window-menu-pill whatsapp-pill">💬 WhatsApp: +92 336 0606905</a>
+      </div>
+
+      <!-- Window Body Content -->
+      <div class="welcome-window-body">
+        <div class="welcome-modal-grid">
+          <div class="welcome-img-col">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="KUST Housing Society Entrance" class="welcome-side-img">
+            <div class="welcome-img-badge">
+              <span class="pulse-ring"></span>
+              <strong>PHASE 1 OPEN</strong>
+              <small>Limited 5 &amp; 10 Marla Plots</small>
+            </div>
+          </div>
+          <div class="welcome-content-col">
+            <div class="welcome-badge-row">
+              <span class="badge-pill welcome-pill">Exclusive Pre-Launch Offer</span>
+              <span class="society-code-badge">KHS • KUST</span>
+            </div>
+            <h2 class="welcome-title">Welcome to <br><span class="text-gold">KUST Housing Society</span></h2>
+            <p class="welcome-sub">Modern living, secure gated community, and high-growth investments crafted for your family's future near KUST University, Kohat.</p>
+            
+            <div class="welcome-perks">
+              <div class="welcome-perk-item">
+                <span class="welcome-icon">&#10003;</span>
+                <span><strong>Up to 10% Cash Discount</strong> on full advance payment</span>
+              </div>
+              <div class="welcome-perk-item">
+                <span class="welcome-icon">&#10003;</span>
+                <span><strong>3-Year Easy Installment Plans</strong> starting from PKR 35,000/mo</span>
+              </div>
+              <div class="welcome-perk-item">
+                <span class="welcome-icon">&#10003;</span>
+                <span><strong>15% Reserved Quota</strong> for KUST Faculty, Staff, &amp; Alumni</span>
+              </div>
+              <div class="welcome-perk-item">
+                <span class="welcome-icon">&#10003;</span>
+                <span><strong>Free VIP Site Tour</strong> with dedicated society transport</span>
+              </div>
+            </div>
+
+            <div class="welcome-actions">
+              <button class="btn btn-gold btn-lg w-100 btn-shimmer" onclick="acceptWelcomeOffer()">Claim Launch Offer &amp; Book Now</button>
+              <a href="https://wa.me/923360606905?text=Hello%20KUST%20Housing%20Society,%20I%20am%20interested%20in%20allotment" target="_blank" rel="noopener" class="btn-whatsapp-welcome">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Chat on WhatsApp (+92 336 0606905)
+              </a>
+              <div class="welcome-secondary-actions">
+                <button class="welcome-link-btn" onclick="triggerBrochureDownload(); closeWelcomeModal();">Download Master Brochure (PDF)</button>
+                <span class="sep-dot">•</span>
+                <button class="welcome-link-btn" onclick="switchPage('masterplan'); closeWelcomeModal();">View Master Plan</button>
+              </div>
+            </div>
+
+            <div class="welcome-footer-note">
+              <label class="welcome-checkbox-label">
+                <input type="checkbox" id="dontShowWelcomeAgain">
+                <span>Don't show this announcement again today</span>
+              </label>
+            </div>
           </div>
         </div>
-        <div class="welcome-content-col">
-          <span class="badge-pill welcome-pill">Exclusive Pre-Launch Offer</span>
-          <h2 class="welcome-title">Welcome to <br><span class="text-gold">KUST Housing Society</span></h2>
-          <p class="welcome-sub">Modern living, secure gated community, and high-growth investments crafted for your family's future near KUST University.</p>
-          
-          <div class="welcome-perks">
-            <div class="welcome-perk-item">
-              <span class="welcome-icon">&#10003;</span>
-              <span><strong>Up to 10% Cash Discount</strong> on full advance payment</span>
-            </div>
-            <div class="welcome-perk-item">
-              <span class="welcome-icon">&#10003;</span>
-              <span><strong>3-Year Easy Installment Plans</strong> starting from PKR 35,000/mo</span>
-            </div>
-            <div class="welcome-perk-item">
-              <span class="welcome-icon">&#10003;</span>
-              <span><strong>Free VIP Site Tour</strong> with dedicated society transport</span>
-            </div>
-          </div>
+      </div>
 
-          <div class="welcome-actions">
-            <button class="btn btn-gold btn-lg w-100 btn-shimmer" onclick="acceptWelcomeOffer()">Claim Launch Offer &amp; Book Now</button>
-            <div class="welcome-secondary-actions">
-              <button class="welcome-link-btn" onclick="triggerBrochureDownload(); closeWelcomeModal();">Download Master Brochure (PDF)</button>
-              <span class="sep-dot">•</span>
-              <button class="welcome-link-btn" onclick="switchPage('masterplan'); closeWelcomeModal();">View Master Plan</button>
-            </div>
-          </div>
-
-          <div class="welcome-footer-note">
-            <label class="welcome-checkbox-label">
-              <input type="checkbox" id="dontShowWelcomeAgain">
-              <span>Don't show this announcement again today</span>
-            </label>
-          </div>
-        </div>
+      <!-- Window Status Bar -->
+      <div class="window-statusbar">
+        <span>● KHS Official Node Verified</span>
+        <span>Hotline &amp; WhatsApp: +92 336 0606905</span>
       </div>
     </div>
   </div>

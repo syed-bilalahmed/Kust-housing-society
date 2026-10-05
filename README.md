@@ -1,13 +1,21 @@
 # KUST Housing Society - Modern Responsive Real Estate Website
+*Official Institute of Computing (IoC) Theme: [ioc.kust.edu.pk](https://ioc.kust.edu.pk/)*
 
-A high-performance, pixel-crafted frontend website for **KUST Housing Society** (Near KUST Campus, Kohat), featuring direct WhatsApp booking at **+92 336 0606905**, WordPress-style glassmorphism hero section, and continuous smooth scrolling text animations.
+A high-performance, pixel-crafted frontend website for **KUST Housing Society** (Near KUST Campus, Kohat), styled with the official **Institute of Computing (IoC - KUST)** academic computing color palette, direct WhatsApp desk integration at **+92 336 0606905**, WordPress-style glassmorphism hero section, continuous smooth scrolling text ticker, and an **OS-style Interactive Window Modal Popup**.
+
+## 🎨 IoC KUST Color Identity & Research
+- **Academic Deep Navy**: `#0B2545` & `#06152B` (Official institutional authority)
+- **IoC Digital / Royal Blue**: `#0066CC` & `#133E87` (Computing & tech infrastructure)
+- **KUST Crest Gold**: `#E5A823` & `#B45309` (Academic excellence & prestige)
+- **KUST Crimson / Maroon**: `#800020` (University seal accent)
+- **Pure Clean Slate**: `#F8FAFC`, `#F1F5F9` & `#FFFFFF` (High readability & crisp UI)
 
 ## ✨ Features Included
 
 1. **01. Home Page**:
-   - Announcement top bar with phone, address, and quick RDA approval badge.
+   - Announcement top bar with phone, address, and **Welcome to KHS Window** quick trigger.
    - Luxury header with branded emblem, full navigation, and "Book Now" CTA.
-   - Hero Section: *"A Better Tomorrow Begins Here"*, dual CTAs (*Book a Plot* / *View Master Plan*), and realistic gated boulevard entrance visual.
+   - Hero Section: *"A Better Tomorrow Begins Here"*, dual CTAs (*Book a Plot* / *View Master Plan* / *Welcome to KHS Window*), and realistic gated boulevard entrance visual.
    - 5 Core Highlight Pillars: *Prime Location, Gated Community, Modern Infrastructure, Parks & Green Areas, Secure Investment*.
    - *"A Community Designed for a Better Lifestyle"* section with perks checklist and interactive virtual tour video modal.
    - Featured plot inventory showcase cards.
@@ -74,11 +82,12 @@ A high-performance, pixel-crafted frontend website for **KUST Housing Society** 
    - Contact Info Card with Address, Phone, Email, Office Hours, and site office mini map.
 
 10. **10. Global Footer**:
-    - Deep forest green (`#0D3B2E`) luxury styling.
+    - Deep Academic Navy (`#0B2545`) institutional styling with gold crest accents.
     - Society emblem, mission summary, social links (Facebook, Instagram, LinkedIn, YouTube).
     - Quick navigation links, contact snapshot, and newsletter subscription input.
 
 ### 🎁 Added Value Tools
+- **IoC KUST Window Modal Popup**: A desktop OS-style window model popup inspired by [ioc.kust.edu.pk](https://ioc.kust.edu.pk/) with red/yellow/green control traffic lights, status monitor, and tabbed panels for *Allotment Notice*, *Faculty & Staff Quota*, *Smart City Computing Infrastructure*, and *Direct WhatsApp Desk*.
 - **Installment Calculator Modal**: Calculate down payment (15%, 20%, 30%) and monthly installments in Pakistani Rupees (PKR) across 1-year, 2-year, or 3-year durations.
 - **Express Booking Modal**: Pre-populates selected plot category and records reservation inquiries.
 - **Toast Notification Engine**: User feedback on bookings, inquiries, and brochure downloads.

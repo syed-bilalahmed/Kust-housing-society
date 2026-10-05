@@ -540,6 +540,10 @@ function initWelcomePopup() {
   }, 750);
 }
 
+// Compatibility aliases
+const openIocWindowModal = openWelcomeModal;
+const closeIocWindowModal = closeWelcomeModal;
+
 /* ================= 12. SCROLL REVEAL & ANIMATIONS OBSERVER ================= */
 let scrollObserver;
 
