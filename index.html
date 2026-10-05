@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUST Housing Society | Modern Living, Secure Community & Prime Location</title>
+  <meta name="description" content="KUST Housing Society offers modern residential and commercial plots near KUST University with world-class amenities, prime location, 24/7 security, and flexible installment plans.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230D3B2E'/><path d='M50 15 L78 72 L62 72 L50 48 L38 72 L22 72 Z' fill='%23C5A869'/><circle cx='50' cy='32' r='7' fill='%23FAF6F0'/></svg>">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Near KUST Campus, Bypass Road, Kohat</span>
+        <span class="divider">|</span>
+        <span><a href="https://wa.me/923360606905" target="_blank" rel="noopener" style="color:inherit;display:inline-flex;align-items:center;gap:4px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +92 336 0606905</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="badge-tag">TMA / RDA Approved</span>
+        <span class="divider">|</span>
+        <button class="top-calc-btn" onclick="openCalcModal()">Installment Calculator</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Header Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" onclick="switchPage('home')">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="10" fill="#0D3B2E"/>
+            <path d="M22 8L34 32H27L22 22L17 32H10L22 8Z" fill="#C5A869"/>
+            <circle cx="22" cy="16" r="3.2" fill="#FAF6F0"/>
+            <path d="M14 35H30" stroke="#C5A869" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">KUST</span>
+          <span class="brand-sub">HOUSING SOCIETY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-page="home" onclick="switchPage('home')">Home</a></li>
+          <li><a href="#about" class="nav-link" data-page="about" onclick="switchPage('about')">About Us</a></li>
+          <li><a href="#masterplan" class="nav-link" data-page="masterplan" onclick="switchPage('masterplan')">Master Plan</a></li>
+          <li><a href="#amenities" class="nav-link" data-page="amenities" onclick="switchPage('amenities')">Amenities</a></li>
+          <li><a href="#location" class="nav-link" data-page="location" onclick="switchPage('location')">Location</a></li>
+          <li><a href="#plots" class="nav-link" data-page="plots" onclick="switchPage('plots')">Plot Details</a></li>
+          <li><a href="#gallery" class="nav-link" data-page="gallery" onclick="switchPage('gallery')">Gallery</a></li>
+          <li><a href="#news" class="nav-link" data-page="news" onclick="switchPage('news')">News</a></li>
+          <li><a href="#contact" class="nav-link" data-page="contact" onclick="switchPage('contact')">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="btn btn-gold header-cta" onclick="openBookingModal('10 Marla Residential Plot')">Book Now</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <div class="logo-text">
+          <span class="brand-title">KUST</span>
+          <span class="brand-sub">HOUSING SOCIETY</span>
+        </div>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-link active" data-page="home">Home</a></li>
+        <li><a href="#about" class="mobile-link" data-page="about">About Us</a></li>
+        <li><a href="#masterplan" class="mobile-link" data-page="masterplan">Master Plan / Plots</a></li>
+        <li><a href="#amenities" class="mobile-link" data-page="amenities">World-Class Amenities</a></li>
+        <li><a href="#location" class="mobile-link" data-page="location">Prime Location</a></li>
+        <li><a href="#plots" class="mobile-link" data-page="plots">Plot Details</a></li>
+        <li><a href="#gallery" class="mobile-link" data-page="gallery">Media Gallery</a></li>
+        <li><a href="#news" class="mobile-link" data-page="news">News & Updates</a></li>
+        <li><a href="#contact" class="mobile-link" data-page="contact">Contact Us</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <button class="btn btn-gold w-100" onclick="openBookingModal('General Inquiry'); closeDrawer();">Book a Plot Now</button>
+        <button class="btn btn-outline-white w-100 mt-2" onclick="openCalcModal(); closeDrawer();">Installment Calculator</button>
+      </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+  </header>
+
+  <!-- ================= MAIN CONTENT APP CONTAINER ================= -->
+  <main id="appContent">
+
+    <!-- ================= 01. HOME PAGE VIEW ================= -->
+    <section class="page-view active" id="view-home">
+      <!-- Hero Section with WordPress Theme Glassmorphism & Animated Layers -->
+      <section class="home-hero">
+        <!-- Ambient Background Glow Orbs for Glassmorphic Depth -->
+        <div class="hero-ambient-orb orb-1"></div>
+        <div class="hero-ambient-orb orb-2"></div>
+        <div class="hero-ambient-orb orb-3"></div>
+
+        <div class="container hero-container">
+          <div class="hero-header-box glass-panel-hero">
+            <span class="sub-badge glass-badge"><span class="badge-sparkle">✦</span> EXCLUSIVE MASTER-PLANNED COMMUNITY <span class="badge-sparkle">✦</span></span>
+            <h1 class="hero-title animate-text-reveal">
+              A Better Tomorrow<br>
+              <span class="highlight-serif gold-gradient-text">Begins Here</span>
+            </h1>
+            <p class="hero-tagline">
+              <span class="tagline-bullet">•</span> Modern Living &nbsp;|&nbsp; 
+              <span class="tagline-bullet">•</span> Secure Community &nbsp;|&nbsp; 
+              <span class="tagline-bullet">•</span> Prime Expressway Location
+            </p>
+            <div class="hero-cta-group">
+              <button class="btn btn-gold btn-shimmer" onclick="switchPage('plots')">Book a Plot</button>
+              <button class="btn btn-glass" onclick="switchPage('masterplan')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-1"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+                View Master Plan
+              </button>
+            </div>
+
+            <!-- Glassmorphism Quick Plot Search / Filter Bar -->
+            <div class="hero-quick-search glass-panel">
+              <div class="search-col">
+                <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Plot Type</label>
+                <select id="heroSearchType" class="glass-select">
+                  <option value="residential">Residential Plots</option>
+                  <option value="commercial">Commercial Plazas</option>
+                  <option value="luxury">Luxury Estate Villas</option>
+                </select>
+              </div>
+              <div class="search-col">
+                <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg> Plot Size</label>
+                <select id="heroSearchSize" class="glass-select">
+                  <option value="5marla">5 Marla (125 Sq Yds)</option>
+                  <option value="10marla" selected>10 Marla (250 Sq Yds)</option>
+                  <option value="1kanal">1 Kanal (500 Sq Yds)</option>
+                  <option value="commercial">Commercial 4 & 8 Marla</option>
+                </select>
+              </div>
+              <div class="search-col">
+                <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Budget Plan</label>
+                <select id="heroSearchBudget" class="glass-select">
+                  <option>Under PKR 25 Lakh</option>
+                  <option selected>PKR 25 - 50 Lakh</option>
+                  <option>PKR 50 - 90 Lakh</option>
+                  <option>PKR 1 Crore+</option>
+                </select>
+              </div>
+              <div class="search-col-btn">
+                <button class="btn btn-gold btn-search w-100" onclick="handleHeroSearch()">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  Find Plots
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Gate Image Banner with Floating Glass Cards -->
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="KUST Housing Society Entrance Boulevard" class="hero-main-img" loading="eager">
+            
+            <div class="hero-image-overlay">
+              <div class="gate-sign-mockup glass-card-solid">
+                <div class="gate-sign-inner">
+                  <div class="mini-logo">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="#C5A869"><path d="M12 2L19 18H14L12 11L10 18H5L12 2Z"/><circle cx="12" cy="7" r="2" fill="#FAF6F0"/></svg>
+                  </div>
+                  <div>
+                    <strong>KUST</strong>
+                    <small>HOUSING SOCIETY</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Glassmorphic Badges (WordPress Luxury Theme Style) -->
+            <div class="hero-glass-floating float-card-1">
+              <div class="glass-float-icon">🌿</div>
+              <div class="glass-float-content">
+                <strong>40% Green Foliage</strong>
+                <span>Lakes & Thematic Parks</span>
+              </div>
+            </div>
+
+            <div class="hero-glass-floating float-card-2">
+              <div class="glass-float-icon">⭐</div>
+              <div class="glass-float-content">
+                <strong>500+ Families</strong>
+                <span>Residing & Building Homes</span>
+              </div>
+            </div>
+
+            <div class="hero-glass-floating float-card-3">
+              <div class="glass-float-icon">🛡️</div>
+              <div class="glass-float-content">
+                <strong>100% RDA Approved</strong>
+                <span>Sanctioned Registry & Transfer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Smooth Continuous Text Scroll Marquee (WordPress Theme Style) -->
+      <div class="marquee-text-strip">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <span class="marquee-item"><span class="star-icon">✦</span> MODERN INFRASTRUCTURE</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 120-FT DUAL BOULEVARDS</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 100% GATED SECURITY</span>
+            <span class="marquee-item highlight"><span class="star-icon">✦</span> 10% PRE-LAUNCH CASH DISCOUNT</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> RDA SANCTIONED TITLES</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> IMMEDIATE POSSESSION READY</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 24/7 RO FILTERED WATER</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 3-YEAR FLEXIBLE INSTALLMENTS</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 100% UNDERGROUND ELECTRICITY</span>
+          </div>
+          <!-- Duplicate for seamless continuous looping -->
+          <div class="marquee-content" aria-hidden="true">
+            <span class="marquee-item"><span class="star-icon">✦</span> MODERN INFRASTRUCTURE</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 120-FT DUAL BOULEVARDS</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 100% GATED SECURITY</span>
+            <span class="marquee-item highlight"><span class="star-icon">✦</span> 10% PRE-LAUNCH CASH DISCOUNT</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> RDA SANCTIONED TITLES</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> IMMEDIATE POSSESSION READY</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 24/7 RO FILTERED WATER</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 3-YEAR FLEXIBLE INSTALLMENTS</span>
+            <span class="marquee-item"><span class="star-icon">✦</span> 100% UNDERGROUND ELECTRICITY</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Feature Bar (5 Core Pillars) -->
+      <section class="features-bar-section">
+        <div class="container">
+          <div class="features-bar-grid">
+            <div class="feature-bar-item">
+              <div class="feature-bar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="feature-bar-text">
+                <h4>Prime Location</h4>
+                <p>Direct Expressway Access</p>
+              </div>
+            </div>
+            
+            <div class="feature-bar-item">
+              <div class="feature-bar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div class="feature-bar-text">
+                <h4>Gated Community</h4>
+                <p>24/7 Security & Patrol</p>
+              </div>
+            </div>
+
+            <div class="feature-bar-item">
+              <div class="feature-bar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="feature-bar-text">
+                <h4>Modern Infrastructure</h4>
+                <p>Underground Cables & Utilities</p>
+              </div>
+            </div>
+
+            <div class="feature-bar-item">
+              <div class="feature-bar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </div>
+              <div class="feature-bar-text">
+                <h4>Parks & Green Areas</h4>
+                <p>40% Designated Greenery</p>
+              </div>
+            </div>
+
+            <div class="feature-bar-item">
+              <div class="feature-bar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/><rect x="2" y="2" width="20" height="20" rx="5"/></svg>
+              </div>
+              <div class="feature-bar-text">
+                <h4>Secure Investment</h4>
+                <p>Guaranteed Capital Growth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Lifestyle Section -->
+      <section class="lifestyle-section section-padding">
+        <div class="container">
+          <div class="lifestyle-grid">
+            <div class="lifestyle-content">
+              <span class="section-tag">PREMIUM LIVING ENVIRONMENT</span>
+              <h2 class="section-title">A Community Designed<br>for a Better Lifestyle</h2>
+              <p class="section-desc">
+                KUST Housing Society is conceived as a master-planned sanctuary tailored to meet the highest international residential standards. Situated next to KUST University with direct connectivity to main transport links, featuring wide carpeted avenues, scenic family parks, educational hubs, and grand Jamia mosques, we create a secure, thriving neighborhood.
+              </p>
+              <div class="perks-checklist">
+                <div class="perk-item">
+                  <span class="perk-icon">&#10003;</span>
+                  <span>120-feet Main Boulevard & 50-feet Residential Streets</span>
+                </div>
+                <div class="perk-item">
+                  <span class="perk-icon">&#10003;</span>
+                  <span>RDA Approved, Clear Titles & Immediate Possession</span>
+                </div>
+                <div class="perk-item">
+                  <span class="perk-icon">&#10003;</span>
+                  <span>Continuous 24/7 Water, Electricity & Gas Provision</span>
+                </div>
+              </div>
+              <div class="cta-row mt-4">
+                <button class="btn btn-gold" onclick="switchPage('about')">Learn More About Us</button>
+                <button class="btn btn-outline-dark ml-3" onclick="openBookingModal('General Inquiry')">Schedule Site Visit</button>
+              </div>
+            </div>
+
+            <!-- Video Preview / Lifestyle Image Card -->
+            <div class="lifestyle-media">
+              <div class="video-preview-card" onclick="openVideoModal()">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="Green Valley Boulevard Community View" class="lifestyle-img">
+                <div class="video-play-btn-wrapper">
+                  <button class="video-play-btn" aria-label="Play virtual walkthrough video">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#0D3B2E"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </button>
+                  <span class="play-label">Watch Society Virtual Tour</span>
+                </div>
+                <div class="lifestyle-floating-badge">
+                  <strong>Phase 1 Ready</strong>
+                  <span>Fast Construction Track</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Plots Showcase Teaser -->
+      <section class="plots-teaser-section section-padding bg-light">
+        <div class="container">
+          <div class="section-heading text-center">
+            <span class="section-tag">INVESTMENT OPPORTUNITIES</span>
+            <h2 class="section-title">Available Plot Categories</h2>
+            <p class="section-sub">Choose from premium residential and commercial plots with 3-year easy installment schedules.</p>
+          </div>
+
+          <div class="plots-grid">
+            <!-- 5 Marla Card -->
+            <div class="plot-card">
+              <div class="plot-card-badge">Residential</div>
+              <div class="plot-card-img">
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="5 Marla Plot Visual">
+              </div>
+              <div class="plot-card-body">
+                <div class="plot-size-header">
+                  <h3>5 Marla Plot</h3>
+                  <span class="sqyds">125 Sq. Yds</span>
+                </div>
+                <div class="plot-price">PKR 22,50,000</div>
+                <ul class="plot-specs-list">
+                  <li><strong>Location:</strong> Sector B & C</li>
+                  <li><strong>Down Payment:</strong> 15% (PKR 3,37,500)</li>
+                  <li><strong>Monthly Installment:</strong> PKR 35,000</li>
+                  <li><strong>Possession:</strong> Within 18 Months</li>
+                </ul>
+                <div class="plot-card-actions">
+                  <button class="btn btn-sm btn-outline-dark" onclick="selectPlotDetail('5marla')">View Details</button>
+                  <button class="btn btn-sm btn-gold" onclick="openBookingModal('5 Marla Residential Plot')">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 Marla Card (Featured) -->
+            <div class="plot-card featured">
+              <div class="plot-card-badge featured-badge">Most Popular</div>
+              <div class="plot-card-img">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="10 Marla Plot Visual">
+              </div>
+              <div class="plot-card-body">
+                <div class="plot-size-header">
+                  <h3>10 Marla Plot</h3>
+                  <span class="sqyds">250 Sq. Yds</span>
+                </div>
+                <div class="plot-price">PKR 45,00,000</div>
+                <ul class="plot-specs-list">
+                  <li><strong>Location:</strong> Sector A (Park Facing)</li>
+                  <li><strong>Down Payment:</strong> 15% (PKR 6,75,000)</li>
+                  <li><strong>Monthly Installment:</strong> PKR 65,000</li>
+                  <li><strong>Possession:</strong> Immediate / Ready</li>
+                </ul>
+                <div class="plot-card-actions">
+                  <button class="btn btn-sm btn-outline-dark" onclick="selectPlotDetail('10marla')">View Details</button>
+                  <button class="btn btn-sm btn-gold" onclick="openBookingModal('10 Marla Residential Plot')">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1 Kanal Card -->
+            <div class="plot-card">
+              <div class="plot-card-badge">Luxury Villa</div>
+              <div class="plot-card-img">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="1 Kanal Plot Visual">
+              </div>
+              <div class="plot-card-body">
+                <div class="plot-size-header">
+                  <h3>1 Kanal Plot</h3>
+                  <span class="sqyds">500 Sq. Yds</span>
+                </div>
+                <div class="plot-price">PKR 85,00,000</div>
+                <ul class="plot-specs-list">
+                  <li><strong>Location:</strong> Executive Lake Block</li>
+                  <li><strong>Down Payment:</strong> 20% (PKR 17,00,000)</li>
+                  <li><strong>Monthly Installment:</strong> PKR 1,15,000</li>
+                  <li><strong>Possession:</strong> Ready for Construction</li>
+                </ul>
+                <div class="plot-card-actions">
+                  <button class="btn btn-sm btn-outline-dark" onclick="selectPlotDetail('1kanal')">View Details</button>
+                  <button class="btn btn-sm btn-gold" onclick="openBookingModal('1 Kanal Luxury Plot')">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Commercial Card -->
+            <div class="plot-card">
+              <div class="plot-card-badge commercial-badge">Commercial</div>
+              <div class="plot-card-img">
+                <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80" alt="Commercial Plot Visual">
+              </div>
+              <div class="plot-card-body">
+                <div class="plot-size-header">
+                  <h3>Commercial Plots</h3>
+                  <span class="sqyds">4 & 8 Marla</span>
+                </div>
+                <div class="plot-price">PKR 1,20,00,000</div>
+                <ul class="plot-specs-list">
+                  <li><strong>Location:</strong> 150-ft Main Boulevard</li>
+                  <li><strong>Down Payment:</strong> 25% (PKR 30,00,000)</li>
+                  <li><strong>Ideal For:</strong> Corporate, Retail & Plazas</li>
+                  <li><strong>Possession:</strong> Immediate Available</li>
+                </ul>
+                <div class="plot-card-actions">
+                  <button class="btn btn-sm btn-outline-dark" onclick="selectPlotDetail('commercial')">View Details</button>
+                  <button class="btn btn-sm btn-gold" onclick="openBookingModal('Main Boulevard Commercial')">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="btn btn-gold" onclick="switchPage('masterplan')">Explore Full Master Plan & Pricing</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 02. ABOUT US VIEW ================= -->
+    <section class="page-view" id="view-about">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">About Us</span>
+          </div>
+          <h1 class="banner-title">About Us</h1>
+          <p class="banner-sub">Building Communities, Creating Better Tomorrows.</p>
+        </div>
+      </div>
+
+      <!-- Vision Block -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="two-col-grid align-center">
+            <div class="col-text">
+              <span class="section-tag">WHO WE ARE</span>
+              <h2 class="section-title">Our Vision</h2>
+              <p class="lead-text">
+                To create a modern, sustainable and secure community where families can live, grow and thrive for generations.
+              </p>
+              <p class="section-desc">
+                Founded with a resolute commitment to excellence, KUST Housing Society blends environmental harmony with high-tech urban planning. Our goal is to cultivate an elevated standard of living characterized by safety, tranquility, clean architecture, and modern luxury for faculty, professionals, and visionary investors.
+              </p>
+              <div class="highlight-bullet-list">
+                <div class="bullet-item">
+                  <span class="check-circle">&#10003;</span>
+                  <div>
+                    <strong>Pioneering Green Urbanism:</strong> Over 40% of our society layout is committed to botanical gardens, recreational parks, and community courtyards.
+                  </div>
+                </div>
+                <div class="bullet-item">
+                  <span class="check-circle">&#10003;</span>
+                  <div>
+                    <strong>100% Legal Transparency:</strong> Fully sanctioned by municipal authorities with approved layout plans and land ownership deeds.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-img">
+              <div class="curved-img-frame">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Modern Villas and Palm Trees" class="rounded-shadow-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stat Counter Strip (Green) -->
+      <section class="stats-counter-strip">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-num" data-target="500">500+</div>
+              <div class="stat-label">Happy Families</div>
+              <p class="stat-desc">Currently residing & building dream homes</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="250">250+</div>
+              <div class="stat-label">Acres Land</div>
+              <p class="stat-desc">Master-planned gated landbank</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">Modern</div>
+              <div class="stat-label">Infrastructure</div>
+              <p class="stat-desc">Underground cabling, sewage & RO plant</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="100">100%</div>
+              <div class="stat-label">Secure Community</div>
+              <p class="stat-desc">Armed patrol, smart gates & high-tech CCTV</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Block -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="two-col-grid align-center reverse-mobile">
+            <div class="col-img">
+              <div class="curved-img-frame">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="Tree Lined Streets and Families Walking" class="rounded-shadow-img">
+              </div>
+            </div>
+            <div class="col-text">
+              <span class="section-tag">OUR PURPOSE</span>
+              <h2 class="section-title">Our Mission</h2>
+              <p class="lead-text">
+                Delivering uncompromised infrastructural quality on time, ensuring peace of mind for every homeowner and real estate investor.
+              </p>
+              <p class="section-desc">
+                We believe that a house is more than just concrete; it is the sanctuary of your family's future memories. That is why every square foot of KUST Housing Society is engineered with surgical attention to detail: wide carpeted roads that eliminate traffic choke points, state-of-the-art security networks, healthcare centers within 5 minutes of each sector, and educational institutions of worldwide repute.
+              </p>
+              <button class="btn btn-gold mt-3" onclick="switchPage('contact')">Get in Touch With Our Team</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 03. MASTER PLAN / PLOTS VIEW ================= -->
+    <section class="page-view" id="view-masterplan">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Master Plan</span>
+          </div>
+          <h1 class="banner-title">Master Plan</h1>
+          <p class="banner-sub">Find the perfect plot for your future.</p>
+        </div>
+      </div>
+
+      <!-- Master Plan Map Layout & Legend -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="masterplan-wrapper">
+            <div class="masterplan-header text-center mb-4">
+              <span class="section-tag">COMPREHENSIVE LAYOUT</span>
+              <h2 class="section-title">Interactive Society Master Plan</h2>
+              <p class="section-desc">Click on any sector below to inspect available inventory, plot dimensions, and nearby amenities.</p>
+            </div>
+
+            <!-- Master Plan Interactive Schematic / Vector Map -->
+            <div class="masterplan-map-box">
+              <div class="masterplan-canvas-container">
+                <!-- SVG Master Plan Schematic -->
+                <svg viewBox="0 0 1000 680" class="masterplan-svg" id="masterplanSvg">
+                  <!-- Society Outer Perimeter Boundary -->
+                  <polygon points="40,90 280,30 760,40 950,160 920,580 620,650 200,640 40,490" fill="#EBF3EE" stroke="#1B5E4A" stroke-width="4"/>
+                  
+                  <!-- Main Lake & Water Body -->
+                  <path d="M420,260 Q490,210 560,250 T620,340 Q580,410 480,380 T400,320 Z" fill="#93C5FD" stroke="#60A5FA" stroke-width="2"/>
+                  <text x="475" y="325" fill="#1E40AF" font-weight="700" font-size="14">Central Lake</text>
+
+                  <!-- Main Boulevard Roads (Gray) -->
+                  <path d="M40,340 C280,330 520,350 930,340" stroke="#CBD5E1" stroke-width="28" fill="none" stroke-linecap="round"/>
+                  <path d="M40,340 C280,330 520,350 930,340" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+                  <text x="210" y="335" fill="#475569" font-size="12" font-weight="600">150 FT MAIN BOULEVARD</text>
+
+                  <!-- North-South Secondary Boulevard -->
+                  <path d="M520,40 C510,220 500,450 510,650" stroke="#CBD5E1" stroke-width="20" fill="none"/>
+                  <path d="M520,40 C510,220 500,450 510,650" stroke="#F8FAFC" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+
+                  <!-- Sector A (Residential - Top Left) -->
+                  <g class="mp-sector" id="sectorA" onclick="highlightSector('Sector A - Executive Villas', '10 Marla & 1 Kanal plots, park-facing, immediate possession.', 'PKR 45,00,000')">
+                    <polygon points="65,110 260,60 480,65 480,310 65,315" fill="#C5A869" fill-opacity="0.35" stroke="#C5A869" stroke-width="2"/>
+                    <text x="220" y="170" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR A</text>
+                    <text x="180" y="195" fill="#425B53" font-size="13">Executive 10 Marla & 1 Kanal</text>
+                  </g>
+
+                  <!-- Sector B (Residential - Top Right) -->
+                  <g class="mp-sector" id="sectorB" onclick="highlightSector('Sector B - Premium Residential', '5 Marla & 10 Marla plots, near international school & sports arena.', 'PKR 22,50,000')">
+                    <polygon points="550,65 740,65 910,170 890,315 550,315" fill="#84CC16" fill-opacity="0.30" stroke="#65A30D" stroke-width="2"/>
+                    <text x="670" y="170" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR B</text>
+                    <text x="650" y="195" fill="#425B53" font-size="13">5 & 10 Marla Residential</text>
+                  </g>
+
+                  <!-- Sector C (Residential - Bottom Left) -->
+                  <g class="mp-sector" id="sectorC" onclick="highlightSector('Sector C - Garden Enclave', 'Affordable 5 Marla plots, adjacent to community park and commercial center.', 'PKR 22,50,000')">
+                    <polygon points="65,370 480,370 480,610 200,610 65,470" fill="#10B981" fill-opacity="0.30" stroke="#059669" stroke-width="2"/>
+                    <text x="210" y="470" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR C</text>
+                    <text x="180" y="495" fill="#425B53" font-size="13">5 Marla Garden Plots</text>
+                  </g>
+
+                  <!-- Sector D (Residential - Bottom Right) -->
+                  <g class="mp-sector" id="sectorD" onclick="highlightSector('Sector D - Sunset Heights', 'Spacious 1 Kanal luxury hillside view plots with dedicated club house.', 'PKR 85,00,000')">
+                    <polygon points="550,370 890,370 870,550 620,620 550,620" fill="#C5A869" fill-opacity="0.25" stroke="#C5A869" stroke-width="2"/>
+                    <text x="670" y="470" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR D</text>
+                    <text x="650" y="495" fill="#425B53" font-size="13">1 Kanal Luxury Plots</text>
+                  </g>
+
+                  <!-- Commercial Strip (Red/Orange on Main Blvd) -->
+                  <g class="mp-sector" id="commercialZone" onclick="highlightSector('Commercial Broadway', '4 & 8 Marla commercial plots along the 150ft boulevard. High ROI plaza spaces.', 'PKR 1,20,00,000')">
+                    <rect x="280" y="315" width="200" height="20" fill="#EA580C" stroke="#C2410C" stroke-width="2"/>
+                    <rect x="540" y="345" width="220" height="20" fill="#EA580C" stroke="#C2410C" stroke-width="2"/>
+                    <text x="310" y="330" fill="#FFFFFF" font-size="11" font-weight="700">COMMERCIAL ZONE</text>
+                    <text x="580" y="360" fill="#FFFFFF" font-size="11" font-weight="700">COMMERCIAL PLAZAS</text>
+                  </g>
+
+                  <!-- Grand Jamia Mosque Icon & Marker -->
+                  <g class="mp-amenity" onclick="highlightSector('Grand Jamia Mosque', 'Magnificent architectural landmark accommodating 5,000+ worshippers.', 'Operational')">
+                    <circle cx="360" cy="220" r="28" fill="#0284C7" stroke="#0369A1" stroke-width="2"/>
+                    <text x="360" y="225" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">Mosque</text>
+                  </g>
+
+                  <!-- International School Campus -->
+                  <g class="mp-amenity" onclick="highlightSector('International Campus School', 'Pre-K to A-Levels international curriculum school with football ground.', 'Under Construction')">
+                    <rect x="680" y="240" width="85" height="50" rx="6" fill="#7C3AED" stroke="#6D28D9" stroke-width="2"/>
+                    <text x="722" y="270" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">School</text>
+                  </g>
+
+                  <!-- Central Theme Park & Sports Complex -->
+                  <g class="mp-amenity" onclick="highlightSector('Central Family Theme Park', '25 acres botanical garden with jogging tracks, fountains & sports arena.', 'Completed')">
+                    <ellipse cx="500" cy="500" rx="45" ry="30" fill="#059669" stroke="#047857" stroke-width="2"/>
+                    <text x="500" y="505" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">Park & Club</text>
+                  </g>
+
+                  <!-- North Entrance Gate -->
+                  <g class="mp-gate">
+                    <rect x="30" y="325" width="18" height="30" fill="#0D3B2E" stroke="#C5A869" stroke-width="2"/>
+                    <text x="38" y="375" fill="#0D3B2E" font-size="10" font-weight="700" text-anchor="middle">MAIN GATE</text>
+                  </g>
+
+                  <!-- Compass Indicator -->
+                  <g transform="translate(900, 80)">
+                    <circle cx="0" cy="0" r="26" fill="#FFFFFF" stroke="#0D3B2E" stroke-width="1.5" opacity="0.9"/>
+                    <polygon points="0,-20 6,0 0,6 -6,0" fill="#DC2626"/>
+                    <polygon points="0,20 6,0 0,-6 -6,0" fill="#64748B"/>
+                    <text x="0" y="-23" font-size="10" font-weight="bold" fill="#0D3B2E" text-anchor="middle">N</text>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Master Plan Interactive Details Inspector Box -->
+              <div class="mp-inspector-card" id="mpInspector">
+                <div class="mp-inspector-header">
+                  <span class="badge-pill" id="mpInspectTag">Sector Preview</span>
+                  <h3 id="mpInspectTitle">Sector A - Executive Villas</h3>
+                </div>
+                <p id="mpInspectDesc">10 Marla & 1 Kanal plots, park-facing, immediate possession with underground electrification.</p>
+                <div class="mp-inspector-footer">
+                  <div>
+                    <span class="price-label">Starting Price</span>
+                    <strong class="price-val" id="mpInspectPrice">PKR 45,00,000</strong>
+                  </div>
+                  <button class="btn btn-gold btn-sm" onclick="switchPage('plots')">Inspect Available Plots</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Master Plan Legend Strip -->
+            <div class="mp-legend-strip">
+              <div class="legend-item"><span class="legend-color-dot" style="background: #C5A869;"></span> Residential Plots</div>
+              <div class="legend-item"><span class="legend-color-dot" style="background: #EA580C;"></span> Commercial Plots</div>
+              <div class="legend-item"><span class="legend-color-dot" style="background: #0284C7;"></span> Mosque</div>
+              <div class="legend-item"><span class="legend-color-dot" style="background: #10B981;"></span> Parks & Green Areas</div>
+              <div class="legend-item"><span class="legend-color-dot" style="background: #7C3AED;"></span> School</div>
+              <div class="legend-item"><span class="legend-color-dot" style="background: #94A3B8;"></span> Main Boulevard</div>
+            </div>
+
+            <!-- Available Plot Sizes Grid -->
+            <div class="available-sizes-section mt-5">
+              <div class="section-heading text-center">
+                <span class="section-tag">DIVERSE INVENTORY</span>
+                <h2 class="section-title">Available Plot Sizes</h2>
+                <p class="section-sub">Carefully zoned plots with clear ownership, registry, and immediate transfer rights.</p>
+              </div>
+
+              <div class="sizes-card-row">
+                <!-- 5 Marla Card -->
+                <div class="size-col-card" onclick="selectPlotDetail('5marla')">
+                  <div class="size-icon-bubble">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  </div>
+                  <h3>5 Marla</h3>
+                  <span class="area-sub">125 Sq. Yds (25 &times; 45 ft)</span>
+                  <div class="size-price-tag">PKR 22,50,000</div>
+                  <p>Ideal for budget-conscious families desiring modern gated security.</p>
+                  <span class="card-link-action">View Specifications &rarr;</span>
+                </div>
+
+                <!-- 10 Marla Card -->
+                <div class="size-col-card highlighted" onclick="selectPlotDetail('10marla')">
+                  <div class="highlight-corner">Popular</div>
+                  <div class="size-icon-bubble">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  </div>
+                  <h3>10 Marla</h3>
+                  <span class="area-sub">250 Sq. Yds (35 &times; 65 ft)</span>
+                  <div class="size-price-tag">PKR 45,00,000</div>
+                  <p>Spacious layout with front lawn space, facing community parks.</p>
+                  <span class="card-link-action">View Specifications &rarr;</span>
+                </div>
+
+                <!-- 1 Kanal Card -->
+                <div class="size-col-card" onclick="selectPlotDetail('1kanal')">
+                  <div class="size-icon-bubble">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  </div>
+                  <h3>1 Kanal</h3>
+                  <span class="area-sub">500 Sq. Yds (50 &times; 90 ft)</span>
+                  <div class="size-price-tag">PKR 85,00,000</div>
+                  <p>Estate living for luxury custom villas, corner & boulevard facing.</p>
+                  <span class="card-link-action">View Specifications &rarr;</span>
+                </div>
+
+                <!-- Commercial Card -->
+                <div class="size-col-card" onclick="selectPlotDetail('commercial')">
+                  <div class="size-icon-bubble">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  </div>
+                  <h3>Commercial</h3>
+                  <span class="area-sub">Various Sizes (4 & 8 Marla)</span>
+                  <div class="size-price-tag">PKR 1,20,00,000</div>
+                  <p>High footfall commercial avenue plots ideal for retail and banks.</p>
+                  <span class="card-link-action">View Specifications &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 04. AMENITIES VIEW ================= -->
+    <section class="page-view" id="view-amenities">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Amenities</span>
+          </div>
+          <h1 class="banner-title">World-Class Amenities</h1>
+          <p class="banner-sub">Everything you need for a comfortable and modern lifestyle.</p>
+        </div>
+      </div>
+
+      <!-- Amenities Grid (3x3 matching design) -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="amenities-grid-3x3">
+            <!-- 1. Gated Community -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>Gated Community</h3>
+              <p>Perimeter boundary wall with controlled biometric entry and automatic RFID boom barriers.</p>
+            </div>
+
+            <!-- 2. 24/7 Security -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <h3>24/7 Security</h3>
+              <p>Active armed security patrol, high-definition AI CCTV surveillance, and central monitoring command.</p>
+            </div>
+
+            <!-- 3. Wide Roads -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19L8 5M16 5l4 14M12 3v18"/></svg>
+              </div>
+              <h3>Wide Roads</h3>
+              <p>150-ft central dual boulevard and minimum 50-ft residential carpeted streets with LED solar lighting.</p>
+            </div>
+
+            <!-- 4. Parks & Green Areas -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15 8H9L12 2Z"/><path d="M12 7L17 15H7L12 7Z"/><path d="M12 13L19 22H5L12 13Z"/></svg>
+              </div>
+              <h3>Parks & Green Areas</h3>
+              <p>Thematic family parks, botanical gardens, lakefront promenades, and dedicated children play zones.</p>
+            </div>
+
+            <!-- 5. Jamia Mosque -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L16 6V11H8V6L12 2Z"/><path d="M3 21h18"/><path d="M5 21V11h14v10"/><path d="M10 21v-5a2 2 0 0 1 4 0v5"/></svg>
+              </div>
+              <h3>Grand Mosque</h3>
+              <p>Masterfully crafted Jamia Mosque inspired by Islamic classical architecture with air conditioning.</p>
+            </div>
+
+            <!-- 6. School & Education -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h3>School & Education</h3>
+              <p>Branches of premier international institutions offering STEM education, libraries, and playgrounds.</p>
+            </div>
+
+            <!-- 7. Commercial Areas -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <h3>Commercial Areas</h3>
+              <p>Flourishing retail malls, supermarkets, cafes, banking squares, and fine dining restaurants.</p>
+            </div>
+
+            <!-- 8. Health Facilities -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3>Health Facilities</h3>
+              <p>24/7 emergency trauma clinic, diagnostic laboratories, pharmacy, and ambulance stations.</p>
+            </div>
+
+            <!-- 9. Underground Utilities -->
+            <div class="amenity-feature-card">
+              <div class="amenity-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <h3>Underground Utilities</h3>
+              <p>Clean skyline with 100% underground high-voltage electricity lines, fiber optic internet, and pure water filtration.</p>
+            </div>
+          </div>
+
+          <!-- Featured Amenity Showcase Banner (Park & Boulevard Image) -->
+          <div class="amenity-hero-banner-card mt-5">
+            <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1600&q=80" alt="Central Park Gazebo and Walking Boulevard" class="amenity-banner-img">
+            <div class="amenity-banner-caption">
+              <h3>Central Park & Gazebo Walkway</h3>
+              <p>Surrounded by over 10,000 indigenous trees, offering a clean ecological oasis for morning runs and peaceful evenings.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 05. LOCATION VIEW ================= -->
+    <section class="page-view" id="view-location">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Location</span>
+          </div>
+          <h1 class="banner-title">Prime Location</h1>
+          <p class="banner-sub">Well connected to key areas and city landmarks.</p>
+        </div>
+      </div>
+
+      <!-- Location Map & Distances Section -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="location-layout-grid">
+            <!-- Left: Interactive Stylized Map View -->
+            <div class="location-map-frame">
+              <div class="map-placeholder-graphic">
+                <!-- Stylized Road Map SVG with Society Pin -->
+                <svg viewBox="0 0 800 500" class="map-svg-visual">
+                  <rect width="800" height="500" fill="#F4EFE6"/>
+                  
+                  <!-- Water river in background -->
+                  <path d="M-20,100 Q200,160 450,110 T820,180" fill="none" stroke="#D1E3F8" stroke-width="36"/>
+                  
+                  <!-- Arterial Highway Grids -->
+                  <path d="M0,220 L800,280" stroke="#E2DCD0" stroke-width="16"/>
+                  <path d="M0,220 L800,280" stroke="#FFFFFF" stroke-width="10"/>
+                  <text x="70" y="210" fill="#8C8270" font-size="12" font-weight="600">Main Highway / Motorway Link</text>
+                  
+                  <!-- Ring Road -->
+                  <path d="M120,0 Q180,260 220,500" stroke="#E2DCD0" stroke-width="14"/>
+                  <path d="M120,0 Q180,260 220,500" stroke="#FFFFFF" stroke-width="8"/>
+                  <text x="135" y="470" fill="#8C8270" font-size="12" font-weight="600">City Ring Road</text>
+
+                  <!-- Secondary Connectors -->
+                  <path d="M350,0 L380,500" stroke="#EDE7DC" stroke-width="8"/>
+                  <path d="M600,0 L560,500" stroke="#EDE7DC" stroke-width="8"/>
+                  <path d="M0,380 L800,420" stroke="#EDE7DC" stroke-width="8"/>
+                  <path d="M0,80 L800,60" stroke="#EDE7DC" stroke-width="8"/>
+
+                  <!-- City Landmarks Pins -->
+                  <g transform="translate(680, 220)">
+                    <circle cx="0" cy="0" r="8" fill="#64748B"/>
+                    <text x="0" y="-12" fill="#475569" font-size="11" font-weight="600" text-anchor="middle">City Center (15 Min)</text>
+                  </g>
+
+                  <g transform="translate(700, 110)">
+                    <circle cx="0" cy="0" r="8" fill="#64748B"/>
+                    <text x="0" y="-12" fill="#475569" font-size="11" font-weight="600" text-anchor="middle">Airport (20 Min)</text>
+                  </g>
+
+                  <g transform="translate(180, 120)">
+                    <circle cx="0" cy="0" r="8" fill="#64748B"/>
+                    <text x="0" y="-12" fill="#475569" font-size="11" font-weight="600" text-anchor="middle">University (10 Min)</text>
+                  </g>
+
+                  <g transform="translate(560, 420)">
+                    <circle cx="0" cy="0" r="8" fill="#64748B"/>
+                    <text x="0" y="20" fill="#475569" font-size="11" font-weight="600" text-anchor="middle">Central Hospital (15 Min)</text>
+                  </g>
+
+                  <!-- Green Valley Housing Society Pin with Badge -->
+                  <g transform="translate(420, 260)">
+                    <!-- Pulsing animation circle -->
+                    <circle cx="0" cy="0" r="32" fill="#0D3B2E" opacity="0.15" class="map-pulse"/>
+                    <circle cx="0" cy="0" r="16" fill="#0D3B2E"/>
+                    <!-- Pin marker -->
+                    <path d="M0,-24 C-10,-24 -16,-18 -16,-8 C-16,4 0,24 0,24 C0,24 16,4 16,-8 C16,-18 10,-24 0,-24 Z" fill="#0D3B2E" stroke="#C5A869" stroke-width="2"/>
+                    <circle cx="0" cy="-10" r="5" fill="#FAF6F0"/>
+                    
+                    <!-- Callout Label -->
+                    <g transform="translate(0, -60)">
+                      <rect x="-90" y="-16" width="180" height="34" rx="6" fill="#0D3B2E" stroke="#C5A869" stroke-width="1.5"/>
+                      <text x="0" y="6" fill="#FAF6F0" font-size="12" font-weight="700" text-anchor="middle">KUST Housing Society</text>
+                    </g>
+                  </g>
+                </svg>
+
+                <div class="map-overlay-card">
+                  <div class="d-flex align-center gap-2">
+                    <span class="live-dot"></span>
+                    <strong>KUST Housing Society Site</strong>
+                  </div>
+                  <small>Direct access from Kohat Bypass & KUST Campus Road</small>
+                  <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-sm btn-gold mt-2">Open in Google Maps &nearr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Key Distances (Matching the design layout) -->
+            <div class="location-distances-box">
+              <span class="section-tag">UNRIVALED ACCESSIBILITY</span>
+              <h2 class="section-title">Key Distances</h2>
+              <p class="section-desc">Experience seamless transit to critical travel arteries, academic zones, and commercial centers.</p>
+
+              <div class="distances-grid">
+                <!-- Item 1 -->
+                <div class="distance-item-card">
+                  <div class="dist-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 11.2 2 11.6 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                  </div>
+                  <div class="dist-info">
+                    <div class="dist-time">5 Minutes</div>
+                    <div class="dist-name">to Main Highway</div>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="distance-item-card">
+                  <div class="dist-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="22.01"/><line x1="15" y1="22" x2="15" y2="22.01"/><line x1="12" y1="18" x2="12" y2="18.01"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg>
+                  </div>
+                  <div class="dist-info">
+                    <div class="dist-time">15 Minutes</div>
+                    <div class="dist-name">to City Center</div>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="distance-item-card">
+                  <div class="dist-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </div>
+                  <div class="dist-info">
+                    <div class="dist-time">20 Minutes</div>
+                    <div class="dist-name">to Airport</div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="distance-item-card">
+                  <div class="dist-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  </div>
+                  <div class="dist-info">
+                    <div class="dist-time">10 Minutes</div>
+                    <div class="dist-name">to Ring Road</div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="distance-item-card">
+                  <div class="dist-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  </div>
+                  <div class="dist-info">
+                    <div class="dist-time">10 Minutes</div>
+                    <div class="dist-name">to University</div>
+                  </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="distance-item-card">
+                  <div class="dist-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  </div>
+                  <div class="dist-info">
+                    <div class="dist-time">15 Minutes</div>
+                    <div class="dist-name">to Hospital</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 06. PLOT DETAILS VIEW ================= -->
+    <section class="page-view" id="view-plots">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <a href="#masterplan" onclick="switchPage('masterplan')">Plots</a> <span class="sep">&gt;</span> <span class="current" id="crumbPlotName">10 Marla Residential Plot</span>
+          </div>
+          <h1 class="banner-title">Plot Details</h1>
+          <p class="banner-sub">Choose a plot that fits your needs.</p>
+        </div>
+      </div>
+
+      <!-- Plot Selector Pill Tabs -->
+      <section class="plot-detail-section section-padding">
+        <div class="container">
+          <!-- Switcher Buttons -->
+          <div class="plot-tabs-wrapper">
+            <button class="plot-tab-btn" data-plot="5marla" onclick="selectPlotDetail('5marla')">5 Marla Residential</button>
+            <button class="plot-tab-btn active" data-plot="10marla" onclick="selectPlotDetail('10marla')">10 Marla Residential</button>
+            <button class="plot-tab-btn" data-plot="1kanal" onclick="selectPlotDetail('1kanal')">1 Kanal Luxury Plot</button>
+            <button class="plot-tab-btn" data-plot="commercial" onclick="selectPlotDetail('commercial')">Commercial Plot</button>
+          </div>
+
+          <!-- Main Plot Detail Card Container -->
+          <div class="plot-detail-container">
+            <div class="plot-detail-grid">
+              <!-- Left: Image Gallery (Main Image + 3 Thumbnails) -->
+              <div class="plot-gallery-col">
+                <div class="plot-main-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="10 Marla Plot Landscape" id="plotMainImg" class="plot-main-img">
+                  <span class="plot-status-tag" id="plotStatusBadge">Available</span>
+                </div>
+                <div class="plot-thumbnails-row">
+                  <div class="thumb-item active" onclick="changeMainPlotImage(this, 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=300&q=80" alt="Thumbnail 1">
+                  </div>
+                  <div class="thumb-item" onclick="changeMainPlotImage(this, 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=300&q=80" alt="Thumbnail 2">
+                  </div>
+                  <div class="thumb-item" onclick="changeMainPlotImage(this, 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=300&q=80" alt="Thumbnail 3">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Specifications & Pricing Box -->
+              <div class="plot-info-col">
+                <h2 class="plot-title" id="plotTitle">10 Marla Residential Plot</h2>
+                <div class="plot-price-large" id="plotPrice">PKR 45,00,000</div>
+                <p class="plot-price-sub" id="plotPriceSub">Flexible 36-Month Installment Plan Available</p>
+
+                <!-- Spec List with Icons -->
+                <div class="plot-specs-table">
+                  <div class="spec-row">
+                    <span class="spec-label">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                      Plot Size:
+                    </span>
+                    <strong class="spec-val" id="specSize">10 Marla (250 Sq. Yds)</strong>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                      Category:
+                    </span>
+                    <strong class="spec-val" id="specCategory">Residential</strong>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Location:
+                    </span>
+                    <strong class="spec-val" id="specLocation">Block A (Park Facing)</strong>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                      Facing:
+                    </span>
+                    <strong class="spec-val" id="specFacing">Central Theme Park</strong>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                      Status:
+                    </span>
+                    <strong class="spec-val text-success" id="specStatus">Immediate Possession Ready</strong>
+                  </div>
+                </div>
+
+                <!-- CTA Action Buttons -->
+                <div class="plot-actions-row">
+                  <button class="btn btn-gold btn-lg flex-1" id="plotBookBtn" onclick="openBookingModal('10 Marla Residential Plot')">Book Now</button>
+                  <button class="btn btn-outline-dark btn-lg" onclick="triggerBrochureDownload()">Download Brochure</button>
+                </div>
+
+                <!-- Features Checklist -->
+                <div class="plot-features-block">
+                  <h4 class="features-head">Features</h4>
+                  <ul class="features-checklist">
+                    <li><span class="check-icon">&#10003;</span> Prime Location</li>
+                    <li><span class="check-icon">&#10003;</span> Park Facing with Open Green Views</li>
+                    <li><span class="check-icon">&#10003;</span> 50-ft Wide Carpeted Access Road</li>
+                    <li><span class="check-icon">&#10003;</span> Secure Gated Community with Patrol</li>
+                    <li><span class="check-icon">&#10003;</span> All Modern Underground Facilities (Water, Gas, Electricity)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 07. GALLERY VIEW ================= -->
+    <section class="page-view" id="view-gallery">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Gallery</span>
+          </div>
+          <h1 class="banner-title">Gallery</h1>
+          <p class="banner-sub">A glimpse of our beautiful community.</p>
+        </div>
+      </div>
+
+      <!-- Filter Tabs and Media Grid -->
+      <section class="section-padding">
+        <div class="container">
+          <!-- Filter Buttons (All, Development, Parks, Mosque, Roads, Community) -->
+          <div class="gallery-filters" id="galleryFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="development">Development</button>
+            <button class="filter-btn" data-filter="parks">Parks</button>
+            <button class="filter-btn" data-filter="mosque">Mosque</button>
+            <button class="filter-btn" data-filter="roads">Roads</button>
+            <button class="filter-btn" data-filter="community">Community</button>
+          </div>
+
+          <!-- Gallery Photo Grid -->
+          <div class="gallery-masonry-grid" id="galleryGrid">
+            <!-- 1. Entrance Gate (Development) -->
+            <div class="gallery-item" data-category="development" onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80', 'Grand Society Entrance & Security Boulevard')">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Society Gate">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Development</span>
+                <h4>Grand Entrance Gate</h4>
+              </div>
+            </div>
+
+            <!-- 2. Central Park (Parks) -->
+            <div class="gallery-item" data-category="parks" onclick="openLightbox('https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=1600&q=80', 'Central Gazebo & Botanical Jogging Tracks')">
+              <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80" alt="Central Park">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Parks</span>
+                <h4>Botanical Gazebo Park</h4>
+              </div>
+            </div>
+
+            <!-- 3. Boulevard Roads (Roads) -->
+            <div class="gallery-item" data-category="roads" onclick="openLightbox('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80', '150-ft Carpeted Main Boulevard with Palm Trees')">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Main Boulevard">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Roads</span>
+                <h4>150-ft Main Boulevard</h4>
+              </div>
+            </div>
+
+            <!-- 4. Mosque (Mosque) -->
+            <div class="gallery-item" data-category="mosque" onclick="openLightbox('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1600&q=80', 'Grand Jamia Mosque with Minarets and Classical Dome')">
+              <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=600&q=80" alt="Grand Jamia Mosque">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Mosque</span>
+                <h4>Grand Jamia Mosque</h4>
+              </div>
+            </div>
+
+            <!-- 5. Community Living (Community) -->
+            <div class="gallery-item" data-category="community" onclick="openLightbox('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80', 'Sector A Premium Villas and Family Neighborhood')">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Community Lifestyle">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Community</span>
+                <h4>Sector A Lifestyle</h4>
+              </div>
+            </div>
+
+            <!-- 6. Aerial Master Plan Overview (Development) -->
+            <div class="gallery-item" data-category="development" onclick="openLightbox('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1600&q=80', 'Sector Lakefront Aerial Construction Progress')">
+              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80" alt="Aerial Progress">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Development</span>
+                <h4>Aerial Site Progress</h4>
+              </div>
+            </div>
+
+            <!-- 7. Green Landscape (Parks) -->
+            <div class="gallery-item" data-category="parks" onclick="openLightbox('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80', 'Sector B Green Belts and Children Playground')">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Green Parks">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Parks</span>
+                <h4>Children Leisure Park</h4>
+              </div>
+            </div>
+
+            <!-- 8. Commercial District (Community) -->
+            <div class="gallery-item" data-category="community" onclick="openLightbox('https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1600&q=80', 'Commercial Broadway Plaza and Business Enclave')">
+              <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80" alt="Commercial Broadway">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Community</span>
+                <h4>Commercial Broadway</h4>
+              </div>
+            </div>
+
+            <!-- 9. Modern Streets (Roads) -->
+            <div class="gallery-item" data-category="roads" onclick="openLightbox('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1600&q=80', 'Curved Access Streets with Underground Cable Ducts')">
+              <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80" alt="Residential Streets">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Roads</span>
+                <h4>Residential Streets</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 08. NEWS & UPDATES VIEW ================= -->
+    <section class="page-view" id="view-news">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">News</span>
+          </div>
+          <h1 class="banner-title">News &amp; Updates</h1>
+          <p class="banner-sub">Stay informed with the latest developments.</p>
+        </div>
+      </div>
+
+      <!-- News Articles List -->
+      <section class="section-padding">
+        <div class="container news-container">
+          <div class="news-list">
+            <!-- Article 1 -->
+            <article class="news-item-card">
+              <div class="news-item-img">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Development Work in Full Swing">
+              </div>
+              <div class="news-item-body">
+                <div class="news-date">15 Aug 2025</div>
+                <h3 class="news-title">Development Work in Full Swing</h3>
+                <p class="news-excerpt">
+                  Heavy infrastructure machinery has commenced final asphalt carpeting on Sector A and Sector B roads. Underground electrical substations have passed rigorous municipal safety audits, paving the way for expedited early home construction approvals.
+                </p>
+                <button class="news-read-more" onclick="openNewsModal('Development Work in Full Swing', '15 Aug 2025', 'Heavy infrastructure machinery has commenced final asphalt carpeting on Sector A and Sector B roads. Underground electrical substations have passed rigorous municipal safety audits, paving the way for expedited early home construction approvals. Plot holders in Sector A can now formally apply for architectural blueprint vetting and commencement certificates.')">Read More &rarr;</button>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="news-item-card">
+              <div class="news-item-img">
+                <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=800&q=80" alt="New Park Inaugurated">
+              </div>
+              <div class="news-item-body">
+                <div class="news-date">10 Jul 2025</div>
+                <h3 class="news-title">New Park Inaugurated</h3>
+                <p class="news-excerpt">
+                  Green Valley management proudly opened the 25-acre Central Botanical Park to existing residents and visiting families. The park integrates certified jogging loops, outdoor cross-training equipment, ornamental koi ponds, and botanical flower pavilions.
+                </p>
+                <button class="news-read-more" onclick="openNewsModal('New Park Inaugurated', '10 Jul 2025', 'Green Valley management proudly opened the 25-acre Central Botanical Park to existing residents and visiting families. The park integrates certified jogging loops, outdoor cross-training equipment, ornamental koi ponds, and botanical flower pavilions. Over 400 families attended the ribbon-cutting ceremony and fireworks.')">Read More &rarr;</button>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="news-item-card">
+              <div class="news-item-img">
+                <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80" alt="Booking Open for Commercial Plots">
+              </div>
+              <div class="news-item-body">
+                <div class="news-date">25 Jun 2025</div>
+                <h3 class="news-title">Booking Open for Commercial Plots</h3>
+                <p class="news-excerpt">
+                  Due to extraordinary investor demand, Green Valley Housing Society has officially released prime commercial plots along the 150-ft Main Boulevard. With flexible 2-year payment plans and high expected rental yield, spaces are filling up swiftly.
+                </p>
+                <button class="news-read-more" onclick="openNewsModal('Booking Open for Commercial Plots', '25 Jun 2025', 'Due to extraordinary investor demand, Green Valley Housing Society has officially released prime commercial plots along the 150-ft Main Boulevard. With flexible 2-year payment plans and high expected rental yield, spaces are filling up swiftly. Leading financial institutions and retail franchises have already secured key corner plots.')">Read More &rarr;</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= 09. CONTACT US VIEW ================= -->
+    <section class="page-view" id="view-contact">
+      <!-- Dark Hero Banner -->
+      <div class="page-banner">
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="container banner-inner">
+          <div class="breadcrumbs">
+            <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Contact Us</span>
+          </div>
+          <h1 class="banner-title">Get in Touch</h1>
+          <p class="banner-sub">We're here to help you with all your queries.</p>
+        </div>
+      </div>
+
+      <!-- Contact Form & Info Cards -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="contact-layout-grid">
+            <!-- Left: Interactive Form -->
+            <div class="contact-form-box">
+              <h3 class="form-title">Send Us a Message</h3>
+              <p class="form-sub">Fill out the form below and our relationship manager will reach out within 2 hours.</p>
+
+              <form id="contactPageForm" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label for="contactFullName">Full Name *</label>
+                  <input type="text" id="contactFullName" class="form-input" placeholder="e.g. Syed Bilal" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" class="form-input" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactPhone">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="contactPhone" class="form-input" placeholder="+92 300 0000000" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactQuery">Select Query</label>
+                  <select id="contactQuery" class="form-input">
+                    <option value="Booking Plot">Booking a Residential / Commercial Plot</option>
+                    <option value="Schedule Visit">Schedule an In-Person Site Visit</option>
+                    <option value="Installment Plan">Inquire About 3-Year Installment Plan</option>
+                    <option value="Overseas Investor">Overseas Pakistani Investor Desk</option>
+                    <option value="General Query">General Inquiry / Development Status</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Your Message</label>
+                  <textarea id="contactMessage" rows="4" class="form-input" placeholder="Tell us how we can assist you..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-lg w-100">Send Message</button>
+              </form>
+            </div>
+
+            <!-- Right: Contact Information & Mini Map -->
+            <div class="contact-info-col">
+              <div class="contact-info-card">
+                <h3>Contact Information</h3>
+
+                <div class="info-block-list">
+                  <!-- Address -->
+                  <div class="info-block-item">
+                    <div class="info-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                      <strong>Address</strong>
+                      <p>Main Boulevard, KUST Housing Society, Near KUST University Campus, Kohat, KPK</p>
+                    </div>
+                  </div>
+
+                  <!-- Phone / WhatsApp -->
+                  <div class="info-block-item">
+                    <div class="info-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <strong>Phone &amp; WhatsApp</strong>
+                      <p><a href="https://wa.me/923360606905" target="_blank" rel="noopener">+92 336 0606905</a></p>
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="info-block-item">
+                    <div class="info-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                      <strong>Email</strong>
+                      <p><a href="mailto:info@kusthousing.com">info@kusthousing.com</a></p>
+                    </div>
+                  </div>
+
+                  <!-- Office Hours -->
+                  <div class="info-block-item">
+                    <div class="info-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                    </div>
+                    <div>
+                      <strong>Office Hours</strong>
+                      <p>Mon - Sat: 9:00 AM - 6:00 PM (Sunday by Appointment)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mini Map Snapshot -->
+                <div class="contact-mini-map">
+                  <svg viewBox="0 0 400 160" width="100%" height="160">
+                    <rect width="400" height="160" fill="#EAE5DB"/>
+                    <path d="M0,80 Q200,90 400,60" stroke="#FFFFFF" stroke-width="14" fill="none"/>
+                    <path d="M160,0 L180,160" stroke="#FFFFFF" stroke-width="10" fill="none"/>
+                    <circle cx="200" cy="75" r="16" fill="#0D3B2E" opacity="0.3"/>
+                    <circle cx="200" cy="75" r="7" fill="#DC2626"/>
+                    <text x="200" y="115" fill="#0D3B2E" font-size="11" font-weight="700" text-anchor="middle">KUST Housing Site Office</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <!-- ================= 10. GLOBAL FOOTER (Matching Section 10) ================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Brand / About Column -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <div class="logo-emblem">
+              <svg viewBox="0 0 44 44" fill="none" width="40" height="40">
+                <rect width="44" height="44" rx="10" fill="#144A3A"/>
+                <path d="M22 8L34 32H27L22 22L17 32H10L22 8Z" fill="#C5A869"/>
+                <circle cx="22" cy="16" r="3.2" fill="#FAF6F0"/>
+                <path d="M14 35H30" stroke="#C5A869" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="brand-title text-white">KUST</span>
+              <span class="brand-sub">HOUSING SOCIETY</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            A modern housing society designed for a better, brighter and more sustainable future near KUST Campus.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/923360606905" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" onclick="switchPage('home')">Home</a></li>
+            <li><a href="#about" onclick="switchPage('about')">About Us</a></li>
+            <li><a href="#masterplan" onclick="switchPage('masterplan')">Master Plan</a></li>
+            <li><a href="#amenities" onclick="switchPage('amenities')">Amenities</a></li>
+            <li><a href="#plots" onclick="switchPage('plots')">Plot Details</a></li>
+            <li><a href="#gallery" onclick="switchPage('gallery')">Gallery</a></li>
+            <li><a href="#news" onclick="switchPage('news')">News</a></li>
+            <li><a href="#contact" onclick="switchPage('contact')">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Get In Touch Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Main Road, KUST Housing Society, Kohat</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span><a href="https://wa.me/923360606905" target="_blank" rel="noopener" style="color:inherit;">+92 336 0606905</a></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span><a href="mailto:info@kusthousing.com" style="color:inherit;">info@kusthousing.com</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Stay Updated</h4>
+          <p class="footer-news-text">Subscribe to receive first access to upcoming sector launches and price announcements.</p>
+          <form class="footer-subscribe-form" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Your email address" required class="subscribe-input">
+            <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 KUST Housing Society. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#contact" onclick="alert('Privacy Policy: All customer information submitted to KUST Housing Society is securely encrypted and never shared with third parties.');">Privacy Policy</a>
+          <span>|</span>
+          <a href="#contact" onclick="alert('Terms & Conditions: Plot allotment is subject to TMA regulatory approvals and signed society bylaws.');">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING ACTION BUTTONS ================= -->
+  <a href="https://wa.me/923360606905?text=Hello%20KUST%20Housing%20Society%2C%20I%20am%20interested%20in%20plot%20booking" target="_blank" rel="noopener" class="floating-contact-bubble" title="Chat with us on WhatsApp (+92 336 0606905)">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="#FFFFFF"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- ================= BOOKING MODAL ================= -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="badge-pill">Express Booking</span>
+          <h3>Reserve Your Plot</h3>
+        </div>
+        <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-sub">Lock in early bird society pricing with initial 15% booking deposit.</p>
+        <form onsubmit="handleBookingSubmit(event)">
+          <div class="form-group">
+            <label>Selected Plot Category</label>
+            <input type="text" id="modalPlotType" class="form-input" value="10 Marla Residential Plot" readonly>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Applicant Name *</label>
+              <input type="text" class="form-input" placeholder="Full legal name" required>
+            </div>
+            <div class="form-group">
+              <label>CNIC / Passport Number *</label>
+              <input type="text" class="form-input" placeholder="35201-XXXXXXX-X" required>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Mobile Number *</label>
+              <input type="tel" class="form-input" placeholder="+92 300 1234567" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" class="form-input" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Preferred Payment Schedule</label>
+            <select class="form-input">
+              <option>100% Full Payment (10% Cash Discount)</option>
+              <option selected>3-Year Easy Installments (Quarterly)</option>
+              <option>2-Year Fast-Track Plan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Any Specific Plot Preference (Corner / Park Facing / Main Boulevard)</label>
+            <textarea class="form-input" rows="2" placeholder="e.g. Prefer park-facing plot in Sector A"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg w-100">Submit Application Form</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INSTALLMENT CALCULATOR MODAL ================= -->
+  <div class="modal-backdrop" id="calcModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="badge-pill">Instant Estimator</span>
+          <h3>Installment Calculator</h3>
+        </div>
+        <button class="modal-close" onclick="closeCalcModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-sub">Calculate your tailored down payment and monthly budget in Pakistani Rupees.</p>
+        <div class="calc-form">
+          <div class="form-group">
+            <label>Select Plot Size</label>
+            <select id="calcPlotSize" class="form-input" onchange="runCalculator()">
+              <option value="2250000">5 Marla (PKR 2,250,000)</option>
+              <option value="4500000" selected>10 Marla (PKR 4,500,000)</option>
+              <option value="8500000">1 Kanal (PKR 8,500,000)</option>
+              <option value="12000000">Commercial 4 Marla (PKR 12,000,000)</option>
+            </select>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Down Payment (%)</label>
+              <select id="calcDownPercent" class="form-input" onchange="runCalculator()">
+                <option value="0.15" selected>15% (Standard Booking)</option>
+                <option value="0.20">20%</option>
+                <option value="0.30">30%</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Duration Plan</label>
+              <select id="calcTenure" class="form-input" onchange="runCalculator()">
+                <option value="36" selected>3 Years (36 Monthly Installments)</option>
+                <option value="24">2 Years (24 Monthly Installments)</option>
+                <option value="12">1 Year (12 Monthly Installments)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-result-row">
+              <span>Total Price:</span>
+              <strong id="calcResTotal">PKR 45,00,000</strong>
+            </div>
+            <div class="calc-result-row">
+              <span>Down Payment (To Start):</span>
+              <strong id="calcResDown" class="text-gold">PKR 6,75,000</strong>
+            </div>
+            <div class="calc-result-row">
+              <span>Remaining Balance:</span>
+              <span id="calcResBalance">PKR 38,25,000</span>
+            </div>
+            <hr class="calc-divider">
+            <div class="calc-result-row big">
+              <span>Estimated Monthly Installment:</span>
+              <strong id="calcResMonthly" class="text-success">PKR 106,250 / mo</strong>
+            </div>
+          </div>
+
+          <button class="btn btn-gold btn-lg w-100 mt-4" onclick="proceedFromCalculator()">Book With This Plan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div class="lightbox-backdrop" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+      <img src="" alt="Gallery Preview" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption">Gallery Photo</div>
+    </div>
+  </div>
+
+  <!-- ================= VIDEO MODAL ================= -->
+  <div class="modal-backdrop" id="videoModal">
+    <div class="modal-card video-modal-card">
+      <div class="modal-header">
+        <h3>Green Valley Virtual Walkthrough</h3>
+        <button class="modal-close" onclick="closeVideoModal()">&times;</button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="video-embed-ratio">
+          <iframe id="videoIframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="Green Valley Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NEWS DETAIL MODAL ================= -->
+  <div class="modal-backdrop" id="newsModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="badge-pill" id="newsModalDate">Date</span>
+          <h3 id="newsModalTitle" class="mt-1">News Title</h3>
+        </div>
+        <button class="modal-close" onclick="closeNewsModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="newsModalBody" class="lead-text"></p>
+        <button class="btn btn-gold mt-3" onclick="closeNewsModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= WELCOME LANDING POPUP MODAL ================= -->
+  <div class="modal-backdrop welcome-modal-backdrop" id="welcomeModal">
+    <div class="modal-card welcome-modal-card">
+      <button class="modal-close welcome-close-btn" onclick="closeWelcomeModal()" aria-label="Close welcome offer">&times;</button>
+      <div class="welcome-modal-grid">
+        <div class="welcome-img-col">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="KUST Housing Society Entrance" class="welcome-side-img">
+          <div class="welcome-img-badge">
+            <span class="pulse-ring"></span>
+            <strong>PHASE 1 OPEN</strong>
+            <small>Limited 5 & 10 Marla Plots</small>
+          </div>
+        </div>
+        <div class="welcome-content-col">
+          <span class="badge-pill welcome-pill">Exclusive Pre-Launch Offer</span>
+          <h2 class="welcome-title">Welcome to <br><span class="text-gold">KUST Housing Society</span></h2>
+          <p class="welcome-sub">Modern living, secure gated community, and high-growth investments crafted for your family's future near KUST University.</p>
+          
+          <div class="welcome-perks">
+            <div class="welcome-perk-item">
+              <span class="welcome-icon">&#10003;</span>
+              <span><strong>Up to 10% Cash Discount</strong> on full advance payment</span>
+            </div>
+            <div class="welcome-perk-item">
+              <span class="welcome-icon">&#10003;</span>
+              <span><strong>3-Year Easy Installment Plans</strong> starting from PKR 35,000/mo</span>
+            </div>
+            <div class="welcome-perk-item">
+              <span class="welcome-icon">&#10003;</span>
+              <span><strong>Free VIP Site Tour</strong> with dedicated society transport</span>
+            </div>
+          </div>
+
+          <div class="welcome-actions">
+            <button class="btn btn-gold btn-lg w-100 btn-shimmer" onclick="acceptWelcomeOffer()">Claim Launch Offer &amp; Book Now</button>
+            <div class="welcome-secondary-actions">
+              <button class="welcome-link-btn" onclick="triggerBrochureDownload(); closeWelcomeModal();">Download Master Brochure (PDF)</button>
+              <span class="sep-dot">•</span>
+              <button class="welcome-link-btn" onclick="switchPage('masterplan'); closeWelcomeModal();">View Master Plan</button>
+            </div>
+          </div>
+
+          <div class="welcome-footer-note">
+            <label class="welcome-checkbox-label">
+              <input type="checkbox" id="dontShowWelcomeAgain">
+              <span>Don't show this announcement again today</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">&#10003;</div>
+    <div class="toast-text" id="toastText">Action successful!</div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
