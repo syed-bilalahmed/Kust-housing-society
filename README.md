@@ -11,6 +11,7 @@ A high-performance, pixel-crafted frontend website for **KUST Housing Society** 
 ## ✨ Features Included
 
 1. **01. Home Page**:
+   - **Interactive Welcome Modal Pop**: Smoothly greets visitors on arrival with KUST crest, key highlights (TMA/RDA approval, 3-yr installment plan, prime location), direct WhatsApp connect button, and instant master plan explorer.
    - Announcement top bar with phone, address, and TMA / RDA approval badge.
    - Luxury header with branded emblem, full navigation, and "Book Now" CTA.
    - Hero Section: *"A Better Tomorrow Begins Here"*, dual CTAs (*Book a Plot* / *View Master Plan*), and realistic gated boulevard entrance visual.

@@ -427,6 +427,30 @@ function proceedFromCalculator() {
   openBookingModal(`${selectedText} (Calculated Plan)`);
 }
 
+/* ================= WELCOME MODAL POPUP ================= */
+function openWelcomeModal() {
+  const modal = document.getElementById('welcomeModal');
+  if (modal) {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeWelcomeModal() {
+  const modal = document.getElementById('welcomeModal');
+  if (modal) {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+function initWelcomePopup() {
+  // Show welcome popup smoothly when visitor lands on website
+  setTimeout(() => {
+    openWelcomeModal();
+  }, 750);
+}
+
 /* ================= 8. VIDEO & NEWS MODALS ================= */
 function openVideoModal() {
   const modal = document.getElementById('videoModal');
@@ -615,4 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize scroll observer
   initScrollAnimations();
+
+  // Welcome modal popup when someone visits website
+  initWelcomePopup();
 });
