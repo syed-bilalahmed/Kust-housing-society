@@ -87,7 +87,7 @@ A high-performance, pixel-crafted frontend website for **KUST Housing Society** 
     - Quick navigation links, contact snapshot, and newsletter subscription input.
 
 ### 🎁 Added Value Tools
-- **IoC KUST Window Modal Popup**: A desktop OS-style window model popup inspired by [ioc.kust.edu.pk](https://ioc.kust.edu.pk/) with red/yellow/green control traffic lights, status monitor, and tabbed panels for *Allotment Notice*, *Faculty & Staff Quota*, *Smart City Computing Infrastructure*, and *Direct WhatsApp Desk*.
+- **Welcome to KHS Window Model Popup**: An OS-style interactive window model popup welcoming visitors directly to **KHS (KUST Housing Society)**. Styled with traffic light controls (red, yellow, green), official status indicator, pre-launch discount highlights (10% cash discount, 3-year installment plans), 15% faculty & staff quota, and direct WhatsApp contact at **+92 336 0606905**.
 - **Installment Calculator Modal**: Calculate down payment (15%, 20%, 30%) and monthly installments in Pakistani Rupees (PKR) across 1-year, 2-year, or 3-year durations.
 - **Express Booking Modal**: Pre-populates selected plot category and records reservation inquiries.
 - **Toast Notification Engine**: User feedback on bookings, inquiries, and brochure downloads.
