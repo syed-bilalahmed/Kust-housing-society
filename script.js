@@ -490,61 +490,7 @@ function showToast(message) {
   }, 4000);
 }
 
-/* ================= 11. WELCOME LANDING POPUP ENGINE ================= */
-function openWelcomeModal() {
-  const modal = document.getElementById('welcomeModal');
-  if (modal) {
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function closeWelcomeModal() {
-  const modal = document.getElementById('welcomeModal');
-  if (modal) {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  
-  const checkbox = document.getElementById('dontShowWelcomeAgain');
-  if (checkbox && checkbox.checked) {
-    try {
-      localStorage.setItem('gv_welcome_dismissed', 'true');
-    } catch (e) {}
-  }
-  try {
-    sessionStorage.setItem('gv_welcome_shown', 'true');
-  } catch (e) {}
-}
-
-function acceptWelcomeOffer() {
-  closeWelcomeModal();
-  setTimeout(() => {
-    openBookingModal('Phase 1 Launch Offer (Exclusive 10% Discount)');
-    showToast('Exclusive 10% launch discount voucher applied to your booking!');
-  }, 250);
-}
-
-function initWelcomePopup() {
-  try {
-    const isDismissed = localStorage.getItem('gv_welcome_dismissed');
-    const isShownThisSession = sessionStorage.getItem('gv_welcome_shown');
-    if (isDismissed === 'true' || isShownThisSession === 'true') {
-      return;
-    }
-  } catch (e) {}
-
-  // Trigger polite welcome popup after 750ms on first arrival
-  setTimeout(() => {
-    openWelcomeModal();
-  }, 750);
-}
-
-// Compatibility aliases
-const openIocWindowModal = openWelcomeModal;
-const closeIocWindowModal = closeWelcomeModal;
-
-/* ================= 12. SCROLL REVEAL & ANIMATIONS OBSERVER ================= */
+/* ================= 11. SCROLL REVEAL & ANIMATIONS OBSERVER ================= */
 let scrollObserver;
 
 function initScrollAnimations() {
@@ -669,7 +615,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize scroll observer
   initScrollAnimations();
-
-  // Initialize landing welcome popup
-  initWelcomePopup();
 });

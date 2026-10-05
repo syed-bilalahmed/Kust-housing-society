@@ -1,29 +1,27 @@
 # KUST Housing Society - Modern Responsive Real Estate Website
-*Official Institute of Computing (IoC) Theme: [ioc.kust.edu.pk](https://ioc.kust.edu.pk/)*
 
-A high-performance, pixel-crafted frontend website for **KUST Housing Society** (Near KUST Campus, Kohat), styled with the official **Institute of Computing (IoC - KUST)** academic computing color palette, direct WhatsApp desk integration at **+92 336 0606905**, WordPress-style glassmorphism hero section, continuous smooth scrolling text ticker, and an **OS-style Interactive Window Modal Popup**.
+A high-performance, pixel-crafted frontend website for **KUST Housing Society** (Near KUST Campus, Kohat), styled with the signature **KUST Deep Navy (`#16225c`)** and **University Crimson Maroon (`#9c1c3d`)** color palette, direct WhatsApp integration at **+92 336 0606905**, WordPress-style glassmorphism hero section, and continuous smooth scrolling text ticker.
 
-## 🎨 IoC KUST Color Identity & Research
-- **Academic Deep Navy**: `#0B2545` & `#06152B` (Official institutional authority)
-- **IoC Digital / Royal Blue**: `#0066CC` & `#133E87` (Computing & tech infrastructure)
-- **KUST Crest Gold**: `#E5A823` & `#B45309` (Academic excellence & prestige)
-- **KUST Crimson / Maroon**: `#800020` (University seal accent)
-- **Pure Clean Slate**: `#F8FAFC`, `#F1F5F9` & `#FFFFFF` (High readability & crisp UI)
+## 🎨 Official KUST Color Palette
+- **Primary Navy Blue**: `#16225c` (Institutional authority, primary header, navbar & footer)
+- **University Crimson Maroon**: `#9c1c3d` (University insignia accent, badges, CTA highlights)
+- **KUST Crest Gold**: `#E5A823` & `#B45309` (Prestige buttons & rating stars)
+- **Pure Clean Slate**: `#F8FAFC`, `#F1F5F9` & `#FFFFFF` (High readability & crisp backgrounds)
 
 ## ✨ Features Included
 
 1. **01. Home Page**:
-   - Announcement top bar with phone, address, and **Welcome to KHS Window** quick trigger.
+   - Announcement top bar with phone, address, and TMA / RDA approval badge.
    - Luxury header with branded emblem, full navigation, and "Book Now" CTA.
-   - Hero Section: *"A Better Tomorrow Begins Here"*, dual CTAs (*Book a Plot* / *View Master Plan* / *Welcome to KHS Window*), and realistic gated boulevard entrance visual.
+   - Hero Section: *"A Better Tomorrow Begins Here"*, dual CTAs (*Book a Plot* / *View Master Plan*), and realistic gated boulevard entrance visual.
    - 5 Core Highlight Pillars: *Prime Location, Gated Community, Modern Infrastructure, Parks & Green Areas, Secure Investment*.
    - *"A Community Designed for a Better Lifestyle"* section with perks checklist and interactive virtual tour video modal.
    - Featured plot inventory showcase cards.
 
 2. **02. About Us**:
-   - Dark forest green banner header with breadcrumbs.
+   - Deep navy (`#16225c`) banner header with breadcrumbs.
    - *Our Vision* narrative paired with modern villa architecture photography.
-   - 4-Column Green Metric Strip (*500+ Happy Families, 250+ Acres Land, Modern Infrastructure, 100% Secure Community*).
+   - 4-Column Metric Strip (*500+ Happy Families, 250+ Acres Land, Modern Infrastructure, 100% Secure Community*).
    - *Our Mission* detailed section and society values.
 
 3. **03. Master Plan / Plots**:
@@ -40,7 +38,7 @@ A high-performance, pixel-crafted frontend website for **KUST Housing Society** 
      1. Gated Community
      2. 24/7 Security & CCTV
      3. Wide 150-ft & 50-ft Roads
-     4. Thematic Parks & Green Areas
+     4. Thematic Parks & Recreation
      5. Grand Jamia Mosque
      6. School & Education
      7. Commercial Hub
@@ -49,7 +47,7 @@ A high-performance, pixel-crafted frontend website for **KUST Housing Society** 
    - Panoramic Central Park & Gazebo feature banner.
 
 5. **05. Prime Location**:
-   - Stylized cartographic location map with pulsing Green Valley site pin and surrounding highway arteries.
+   - Stylized cartographic location map with pulsing KUST Housing Society site pin and surrounding highway arteries.
    - 6 Key Distances Cards:
      - *5 Minutes to Main Highway*
      - *15 Minutes to City Center*
@@ -82,12 +80,11 @@ A high-performance, pixel-crafted frontend website for **KUST Housing Society** 
    - Contact Info Card with Address, Phone, Email, Office Hours, and site office mini map.
 
 10. **10. Global Footer**:
-    - Deep Academic Navy (`#0B2545`) institutional styling with gold crest accents.
+    - Deep KUST Navy (`#16225c`) institutional styling with university maroon (`#9c1c3d`) accents.
     - Society emblem, mission summary, social links (Facebook, Instagram, LinkedIn, YouTube).
     - Quick navigation links, contact snapshot, and newsletter subscription input.
 
 ### 🎁 Added Value Tools
-- **Welcome to KHS Window Model Popup**: An OS-style interactive window model popup welcoming visitors directly to **KHS (KUST Housing Society)**. Styled with traffic light controls (red, yellow, green), official status indicator, pre-launch discount highlights (10% cash discount, 3-year installment plans), 15% faculty & staff quota, and direct WhatsApp contact at **+92 336 0606905**.
 - **Installment Calculator Modal**: Calculate down payment (15%, 20%, 30%) and monthly installments in Pakistani Rupees (PKR) across 1-year, 2-year, or 3-year durations.
 - **Express Booking Modal**: Pre-populates selected plot category and records reservation inquiries.
 - **Toast Notification Engine**: User feedback on bookings, inquiries, and brochure downloads.

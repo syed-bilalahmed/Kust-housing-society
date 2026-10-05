@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles.css">
   
   <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230D3B2E'/><path d='M50 15 L78 72 L62 72 L50 48 L38 72 L22 72 Z' fill='%23C5A869'/><circle cx='50' cy='32' r='7' fill='%23FAF6F0'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%2316225c'/><path d='M50 15 L78 72 L62 72 L50 48 L38 72 L22 72 Z' fill='%239c1c3d'/><circle cx='50' cy='32' r='7' fill='%23FAF6F0'/></svg>">
 </head>
 <body>
 
@@ -30,8 +30,6 @@
       <div class="top-bar-right">
         <span class="badge-tag">TMA / RDA Approved</span>
         <span class="divider">|</span>
-        <button class="top-calc-btn" onclick="openWelcomeModal()" style="color:#38BDF8;display:inline-flex;align-items:center;gap:4px;"><span class="status-online-dot"></span> Welcome to KHS Window</button>
-        <span class="divider">|</span>
         <button class="top-calc-btn" onclick="openCalcModal()">Installment Calculator</button>
       </div>
     </div>
@@ -44,7 +42,7 @@
       <a href="#home" class="brand-logo" onclick="switchPage('home')">
         <div class="logo-emblem">
           <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="44" height="44" rx="10" fill="#0D3B2E"/>
+            <rect width="44" height="44" rx="10" fill="#16225c"/>
             <path d="M22 8L34 32H27L22 22L17 32H10L22 8Z" fill="#C5A869"/>
             <circle cx="22" cy="16" r="3.2" fill="#FAF6F0"/>
             <path d="M14 35H30" stroke="#C5A869" stroke-width="2" stroke-linecap="round"/>
@@ -139,9 +137,6 @@
               <button class="btn btn-glass" onclick="switchPage('masterplan')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-1"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
                 View Master Plan
-              </button>
-              <button class="btn btn-glass-blue" onclick="openWelcomeModal()">
-                <span class="status-online-dot"></span> Welcome to KHS Window
               </button>
             </div>
 
@@ -347,10 +342,10 @@
             <!-- Video Preview / Lifestyle Image Card -->
             <div class="lifestyle-media">
               <div class="video-preview-card" onclick="openVideoModal()">
-                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="Green Valley Boulevard Community View" class="lifestyle-img">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="KUST Housing Society Boulevard View" class="lifestyle-img">
                 <div class="video-play-btn-wrapper">
                   <button class="video-play-btn" aria-label="Play virtual walkthrough video">
-                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#0D3B2E"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFFFFF"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                   </button>
                   <span class="play-label">Watch Society Virtual Tour</span>
                 </div>
@@ -486,7 +481,7 @@
     <section class="page-view" id="view-about">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">About Us</span>
@@ -533,7 +528,7 @@
         </div>
       </section>
 
-      <!-- Stat Counter Strip (Green) -->
+      <!-- Stat Counter Strip (Deep Navy) -->
       <section class="stats-counter-strip">
         <div class="container">
           <div class="stats-grid">
@@ -590,7 +585,7 @@
     <section class="page-view" id="view-masterplan">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Master Plan</span>
@@ -616,11 +611,11 @@
                 <!-- SVG Master Plan Schematic -->
                 <svg viewBox="0 0 1000 680" class="masterplan-svg" id="masterplanSvg">
                   <!-- Society Outer Perimeter Boundary -->
-                  <polygon points="40,90 280,30 760,40 950,160 920,580 620,650 200,640 40,490" fill="#EBF3EE" stroke="#1B5E4A" stroke-width="4"/>
+                  <polygon points="40,90 280,30 760,40 950,160 920,580 620,650 200,640 40,490" fill="#F1F5F9" stroke="#16225c" stroke-width="4"/>
                   
                   <!-- Main Lake & Water Body -->
                   <path d="M420,260 Q490,210 560,250 T620,340 Q580,410 480,380 T400,320 Z" fill="#93C5FD" stroke="#60A5FA" stroke-width="2"/>
-                  <text x="475" y="325" fill="#1E40AF" font-weight="700" font-size="14">Central Lake</text>
+                  <text x="475" y="325" fill="#16225c" font-weight="700" font-size="14">Central Lake</text>
 
                   <!-- Main Boulevard Roads (Gray) -->
                   <path d="M40,340 C280,330 520,350 930,340" stroke="#CBD5E1" stroke-width="28" fill="none" stroke-linecap="round"/>
@@ -634,42 +629,42 @@
                   <!-- Sector A (Residential - Top Left) -->
                   <g class="mp-sector" id="sectorA" onclick="highlightSector('Sector A - Executive Villas', '10 Marla & 1 Kanal plots, park-facing, immediate possession.', 'PKR 45,00,000')">
                     <polygon points="65,110 260,60 480,65 480,310 65,315" fill="#C5A869" fill-opacity="0.35" stroke="#C5A869" stroke-width="2"/>
-                    <text x="220" y="170" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR A</text>
-                    <text x="180" y="195" fill="#425B53" font-size="13">Executive 10 Marla & 1 Kanal</text>
+                    <text x="220" y="170" fill="#16225c" font-weight="700" font-size="18">SECTOR A</text>
+                    <text x="180" y="195" fill="#475569" font-size="13">Executive 10 Marla & 1 Kanal</text>
                   </g>
 
                   <!-- Sector B (Residential - Top Right) -->
                   <g class="mp-sector" id="sectorB" onclick="highlightSector('Sector B - Premium Residential', '5 Marla & 10 Marla plots, near international school & sports arena.', 'PKR 22,50,000')">
-                    <polygon points="550,65 740,65 910,170 890,315 550,315" fill="#84CC16" fill-opacity="0.30" stroke="#65A30D" stroke-width="2"/>
-                    <text x="670" y="170" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR B</text>
-                    <text x="650" y="195" fill="#425B53" font-size="13">5 & 10 Marla Residential</text>
+                    <polygon points="550,65 740,65 910,170 890,315 550,315" fill="#93C5FD" fill-opacity="0.35" stroke="#3B82F6" stroke-width="2"/>
+                    <text x="670" y="170" fill="#16225c" font-weight="700" font-size="18">SECTOR B</text>
+                    <text x="650" y="195" fill="#475569" font-size="13">5 & 10 Marla Residential</text>
                   </g>
 
                   <!-- Sector C (Residential - Bottom Left) -->
                   <g class="mp-sector" id="sectorC" onclick="highlightSector('Sector C - Garden Enclave', 'Affordable 5 Marla plots, adjacent to community park and commercial center.', 'PKR 22,50,000')">
-                    <polygon points="65,370 480,370 480,610 200,610 65,470" fill="#10B981" fill-opacity="0.30" stroke="#059669" stroke-width="2"/>
-                    <text x="210" y="470" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR C</text>
-                    <text x="180" y="495" fill="#425B53" font-size="13">5 Marla Garden Plots</text>
+                    <polygon points="65,370 480,370 480,610 200,610 65,470" fill="#C7D2FE" fill-opacity="0.35" stroke="#6366F1" stroke-width="2"/>
+                    <text x="210" y="470" fill="#16225c" font-weight="700" font-size="18">SECTOR C</text>
+                    <text x="180" y="495" fill="#475569" font-size="13">5 Marla Garden Plots</text>
                   </g>
 
                   <!-- Sector D (Residential - Bottom Right) -->
                   <g class="mp-sector" id="sectorD" onclick="highlightSector('Sector D - Sunset Heights', 'Spacious 1 Kanal luxury hillside view plots with dedicated club house.', 'PKR 85,00,000')">
                     <polygon points="550,370 890,370 870,550 620,620 550,620" fill="#C5A869" fill-opacity="0.25" stroke="#C5A869" stroke-width="2"/>
-                    <text x="670" y="470" fill="#0D3B2E" font-weight="700" font-size="18">SECTOR D</text>
-                    <text x="650" y="495" fill="#425B53" font-size="13">1 Kanal Luxury Plots</text>
+                    <text x="670" y="470" fill="#16225c" font-weight="700" font-size="18">SECTOR D</text>
+                    <text x="650" y="495" fill="#475569" font-size="13">1 Kanal Luxury Plots</text>
                   </g>
 
                   <!-- Commercial Strip (Red/Orange on Main Blvd) -->
                   <g class="mp-sector" id="commercialZone" onclick="highlightSector('Commercial Broadway', '4 & 8 Marla commercial plots along the 150ft boulevard. High ROI plaza spaces.', 'PKR 1,20,00,000')">
-                    <rect x="280" y="315" width="200" height="20" fill="#EA580C" stroke="#C2410C" stroke-width="2"/>
-                    <rect x="540" y="345" width="220" height="20" fill="#EA580C" stroke="#C2410C" stroke-width="2"/>
+                    <rect x="280" y="315" width="200" height="20" fill="#9c1c3d" stroke="#7f1530" stroke-width="2"/>
+                    <rect x="540" y="345" width="220" height="20" fill="#9c1c3d" stroke="#7f1530" stroke-width="2"/>
                     <text x="310" y="330" fill="#FFFFFF" font-size="11" font-weight="700">COMMERCIAL ZONE</text>
                     <text x="580" y="360" fill="#FFFFFF" font-size="11" font-weight="700">COMMERCIAL PLAZAS</text>
                   </g>
 
                   <!-- Grand Jamia Mosque Icon & Marker -->
                   <g class="mp-amenity" onclick="highlightSector('Grand Jamia Mosque', 'Magnificent architectural landmark accommodating 5,000+ worshippers.', 'Operational')">
-                    <circle cx="360" cy="220" r="28" fill="#0284C7" stroke="#0369A1" stroke-width="2"/>
+                    <circle cx="360" cy="220" r="28" fill="#16225c" stroke="#0e163d" stroke-width="2"/>
                     <text x="360" y="225" fill="#FFFFFF" font-size="12" font-weight="700" text-anchor="middle">Mosque</text>
                   </g>
 
@@ -681,22 +676,22 @@
 
                   <!-- Central Theme Park & Sports Complex -->
                   <g class="mp-amenity" onclick="highlightSector('Central Family Theme Park', '25 acres botanical garden with jogging tracks, fountains & sports arena.', 'Completed')">
-                    <ellipse cx="500" cy="500" rx="45" ry="30" fill="#059669" stroke="#047857" stroke-width="2"/>
+                    <ellipse cx="500" cy="500" rx="45" ry="30" fill="#9c1c3d" stroke="#7f1530" stroke-width="2"/>
                     <text x="500" y="505" fill="#FFFFFF" font-size="11" font-weight="700" text-anchor="middle">Park & Club</text>
                   </g>
 
                   <!-- North Entrance Gate -->
                   <g class="mp-gate">
-                    <rect x="30" y="325" width="18" height="30" fill="#0D3B2E" stroke="#C5A869" stroke-width="2"/>
-                    <text x="38" y="375" fill="#0D3B2E" font-size="10" font-weight="700" text-anchor="middle">MAIN GATE</text>
+                    <rect x="30" y="325" width="18" height="30" fill="#16225c" stroke="#C5A869" stroke-width="2"/>
+                    <text x="38" y="375" fill="#16225c" font-size="10" font-weight="700" text-anchor="middle">MAIN GATE</text>
                   </g>
 
                   <!-- Compass Indicator -->
                   <g transform="translate(900, 80)">
-                    <circle cx="0" cy="0" r="26" fill="#FFFFFF" stroke="#0D3B2E" stroke-width="1.5" opacity="0.9"/>
-                    <polygon points="0,-20 6,0 0,6 -6,0" fill="#DC2626"/>
+                    <circle cx="0" cy="0" r="26" fill="#FFFFFF" stroke="#16225c" stroke-width="1.5" opacity="0.9"/>
+                    <polygon points="0,-20 6,0 0,6 -6,0" fill="#9c1c3d"/>
                     <polygon points="0,20 6,0 0,-6 -6,0" fill="#64748B"/>
-                    <text x="0" y="-23" font-size="10" font-weight="bold" fill="#0D3B2E" text-anchor="middle">N</text>
+                    <text x="0" y="-23" font-size="10" font-weight="bold" fill="#16225c" text-anchor="middle">N</text>
                   </g>
                 </svg>
               </div>
@@ -723,7 +718,7 @@
               <div class="legend-item"><span class="legend-color-dot" style="background: #C5A869;"></span> Residential Plots</div>
               <div class="legend-item"><span class="legend-color-dot" style="background: #EA580C;"></span> Commercial Plots</div>
               <div class="legend-item"><span class="legend-color-dot" style="background: #0284C7;"></span> Mosque</div>
-              <div class="legend-item"><span class="legend-color-dot" style="background: #10B981;"></span> Parks & Green Areas</div>
+              <div class="legend-item"><span class="legend-color-dot" style="background: #9c1c3d;"></span> Parks & Sports Arena</div>
               <div class="legend-item"><span class="legend-color-dot" style="background: #7C3AED;"></span> School</div>
               <div class="legend-item"><span class="legend-color-dot" style="background: #94A3B8;"></span> Main Boulevard</div>
             </div>
@@ -796,7 +791,7 @@
     <section class="page-view" id="view-amenities">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Amenities</span>
@@ -908,7 +903,7 @@
     <section class="page-view" id="view-location">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Location</span>
@@ -969,18 +964,18 @@
                     <text x="0" y="20" fill="#475569" font-size="11" font-weight="600" text-anchor="middle">Central Hospital (15 Min)</text>
                   </g>
 
-                  <!-- Green Valley Housing Society Pin with Badge -->
+                  <!-- KUST Housing Society Pin with Badge -->
                   <g transform="translate(420, 260)">
                     <!-- Pulsing animation circle -->
-                    <circle cx="0" cy="0" r="32" fill="#0D3B2E" opacity="0.15" class="map-pulse"/>
-                    <circle cx="0" cy="0" r="16" fill="#0D3B2E"/>
+                    <circle cx="0" cy="0" r="32" fill="#16225c" opacity="0.15" class="map-pulse"/>
+                    <circle cx="0" cy="0" r="16" fill="#16225c"/>
                     <!-- Pin marker -->
-                    <path d="M0,-24 C-10,-24 -16,-18 -16,-8 C-16,4 0,24 0,24 C0,24 16,4 16,-8 C16,-18 10,-24 0,-24 Z" fill="#0D3B2E" stroke="#C5A869" stroke-width="2"/>
+                    <path d="M0,-24 C-10,-24 -16,-18 -16,-8 C-16,4 0,24 0,24 C0,24 16,4 16,-8 C16,-18 10,-24 0,-24 Z" fill="#9c1c3d" stroke="#16225c" stroke-width="2"/>
                     <circle cx="0" cy="-10" r="5" fill="#FAF6F0"/>
                     
                     <!-- Callout Label -->
                     <g transform="translate(0, -60)">
-                      <rect x="-90" y="-16" width="180" height="34" rx="6" fill="#0D3B2E" stroke="#C5A869" stroke-width="1.5"/>
+                      <rect x="-90" y="-16" width="180" height="34" rx="6" fill="#16225c" stroke="#9c1c3d" stroke-width="1.5"/>
                       <text x="0" y="6" fill="#FAF6F0" font-size="12" font-weight="700" text-anchor="middle">KUST Housing Society</text>
                     </g>
                   </g>
@@ -1080,7 +1075,7 @@
     <section class="page-view" id="view-plots">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <a href="#masterplan" onclick="switchPage('masterplan')">Plots</a> <span class="sep">&gt;</span> <span class="current" id="crumbPlotName">10 Marla Residential Plot</span>
@@ -1196,7 +1191,7 @@
     <section class="page-view" id="view-gallery">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Gallery</span>
@@ -1310,7 +1305,7 @@
     <section class="page-view" id="view-news">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">News</span>
@@ -1348,9 +1343,9 @@
                 <div class="news-date">10 Jul 2025</div>
                 <h3 class="news-title">New Park Inaugurated</h3>
                 <p class="news-excerpt">
-                  Green Valley management proudly opened the 25-acre Central Botanical Park to existing residents and visiting families. The park integrates certified jogging loops, outdoor cross-training equipment, ornamental koi ponds, and botanical flower pavilions.
+                  KUST Housing Society management proudly opened the 25-acre Central Botanical Park to existing residents and visiting families. The park integrates certified jogging loops, outdoor cross-training equipment, ornamental koi ponds, and botanical flower pavilions.
                 </p>
-                <button class="news-read-more" onclick="openNewsModal('New Park Inaugurated', '10 Jul 2025', 'Green Valley management proudly opened the 25-acre Central Botanical Park to existing residents and visiting families. The park integrates certified jogging loops, outdoor cross-training equipment, ornamental koi ponds, and botanical flower pavilions. Over 400 families attended the ribbon-cutting ceremony and fireworks.')">Read More &rarr;</button>
+                <button class="news-read-more" onclick="openNewsModal('New Park Inaugurated', '10 Jul 2025', 'KUST Housing Society management proudly opened the 25-acre Central Botanical Park to existing residents and visiting families. The park integrates certified jogging loops, outdoor cross-training equipment, ornamental koi ponds, and botanical flower pavilions. Over 400 families attended the ribbon-cutting ceremony and fireworks.')">Read More &rarr;</button>
               </div>
             </article>
 
@@ -1363,9 +1358,9 @@
                 <div class="news-date">25 Jun 2025</div>
                 <h3 class="news-title">Booking Open for Commercial Plots</h3>
                 <p class="news-excerpt">
-                  Due to extraordinary investor demand, Green Valley Housing Society has officially released prime commercial plots along the 150-ft Main Boulevard. With flexible 2-year payment plans and high expected rental yield, spaces are filling up swiftly.
+                  Due to extraordinary investor demand, KUST Housing Society has officially released prime commercial plots along the 150-ft Main Boulevard. With flexible 2-year payment plans and high expected rental yield, spaces are filling up swiftly.
                 </p>
-                <button class="news-read-more" onclick="openNewsModal('Booking Open for Commercial Plots', '25 Jun 2025', 'Due to extraordinary investor demand, Green Valley Housing Society has officially released prime commercial plots along the 150-ft Main Boulevard. With flexible 2-year payment plans and high expected rental yield, spaces are filling up swiftly. Leading financial institutions and retail franchises have already secured key corner plots.')">Read More &rarr;</button>
+                <button class="news-read-more" onclick="openNewsModal('Booking Open for Commercial Plots', '25 Jun 2025', 'Due to extraordinary investor demand, KUST Housing Society has officially released prime commercial plots along the 150-ft Main Boulevard. With flexible 2-year payment plans and high expected rental yield, spaces are filling up swiftly. Leading financial institutions and retail franchises have already secured key corner plots.')">Read More &rarr;</button>
               </div>
             </article>
           </div>
@@ -1377,7 +1372,7 @@
     <section class="page-view" id="view-contact">
       <!-- Dark Hero Banner -->
       <div class="page-banner">
-        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(13, 59, 46, 0.88), rgba(9, 40, 31, 0.95)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="page-banner-bg" style="background-image: linear-gradient(rgba(22, 34, 92, 0.90), rgba(14, 22, 61, 0.96)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80');"></div>
         <div class="container banner-inner">
           <div class="breadcrumbs">
             <a href="#home" onclick="switchPage('home')">Home</a> <span class="sep">&gt;</span> <span class="current">Contact Us</span>
@@ -1486,12 +1481,12 @@
                 <!-- Mini Map Snapshot -->
                 <div class="contact-mini-map">
                   <svg viewBox="0 0 400 160" width="100%" height="160">
-                    <rect width="400" height="160" fill="#EAE5DB"/>
+                    <rect width="400" height="160" fill="#EEF2F6"/>
                     <path d="M0,80 Q200,90 400,60" stroke="#FFFFFF" stroke-width="14" fill="none"/>
                     <path d="M160,0 L180,160" stroke="#FFFFFF" stroke-width="10" fill="none"/>
-                    <circle cx="200" cy="75" r="16" fill="#0D3B2E" opacity="0.3"/>
-                    <circle cx="200" cy="75" r="7" fill="#DC2626"/>
-                    <text x="200" y="115" fill="#0D3B2E" font-size="11" font-weight="700" text-anchor="middle">KUST Housing Site Office</text>
+                    <circle cx="200" cy="75" r="16" fill="#16225c" opacity="0.25"/>
+                    <circle cx="200" cy="75" r="7" fill="#9c1c3d"/>
+                    <text x="200" y="115" fill="#16225c" font-size="11" font-weight="700" text-anchor="middle">KUST Housing Site Office</text>
                   </svg>
                 </div>
               </div>
@@ -1739,12 +1734,12 @@
   <div class="modal-backdrop" id="videoModal">
     <div class="modal-card video-modal-card">
       <div class="modal-header">
-        <h3>Green Valley Virtual Walkthrough</h3>
+        <h3>KUST Housing Society Virtual Walkthrough</h3>
         <button class="modal-close" onclick="closeVideoModal()">&times;</button>
       </div>
       <div class="modal-body p-0">
         <div class="video-embed-ratio">
-          <iframe id="videoIframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="Green Valley Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="videoIframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="KUST Housing Society Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -1763,103 +1758,6 @@
       <div class="modal-body">
         <p id="newsModalBody" class="lead-text"></p>
         <button class="btn btn-gold mt-3" onclick="closeNewsModal()">Close</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ================= WELCOME WINDOW MODEL POPUP: WELCOME TO KHS - KUST HOUSING SOCIETY ================= -->
-  <div class="modal-backdrop welcome-modal-backdrop" id="welcomeModal">
-    <div class="welcome-window-card">
-      <!-- Window Title Bar with Traffic Controls -->
-      <div class="window-titlebar">
-        <div class="window-controls">
-          <span class="window-dot dot-red" onclick="closeWelcomeModal()" title="Close Window"></span>
-          <span class="window-dot dot-yellow" onclick="closeWelcomeModal()" title="Minimize"></span>
-          <span class="window-dot dot-green" onclick="showToast('KHS Portal window maximized.')" title="Maximize"></span>
-        </div>
-        <div class="window-title-text">
-          <span>🏛️</span>
-          <span>Welcome to KHS — KUST Housing Society [Official Portal]</span>
-        </div>
-        <div class="window-status">
-          <span class="status-online-dot"></span>
-          <span>Online Desk</span>
-        </div>
-      </div>
-
-      <!-- Window Sub-menubar Strip -->
-      <div class="window-menubar">
-        <span class="window-menu-pill">📍 Near KUST Campus</span>
-        <span class="window-menu-pill">⭐ TMA &amp; RDA Approved</span>
-        <span class="window-menu-pill">🎓 15% Academic &amp; Faculty Quota</span>
-        <a href="https://wa.me/923360606905" target="_blank" rel="noopener" class="window-menu-pill whatsapp-pill">💬 WhatsApp: +92 336 0606905</a>
-      </div>
-
-      <!-- Window Body Content -->
-      <div class="welcome-window-body">
-        <div class="welcome-modal-grid">
-          <div class="welcome-img-col">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="KUST Housing Society Entrance" class="welcome-side-img">
-            <div class="welcome-img-badge">
-              <span class="pulse-ring"></span>
-              <strong>PHASE 1 OPEN</strong>
-              <small>Limited 5 &amp; 10 Marla Plots</small>
-            </div>
-          </div>
-          <div class="welcome-content-col">
-            <div class="welcome-badge-row">
-              <span class="badge-pill welcome-pill">Exclusive Pre-Launch Offer</span>
-              <span class="society-code-badge">KHS • KUST</span>
-            </div>
-            <h2 class="welcome-title">Welcome to <br><span class="text-gold">KUST Housing Society</span></h2>
-            <p class="welcome-sub">Modern living, secure gated community, and high-growth investments crafted for your family's future near KUST University, Kohat.</p>
-            
-            <div class="welcome-perks">
-              <div class="welcome-perk-item">
-                <span class="welcome-icon">&#10003;</span>
-                <span><strong>Up to 10% Cash Discount</strong> on full advance payment</span>
-              </div>
-              <div class="welcome-perk-item">
-                <span class="welcome-icon">&#10003;</span>
-                <span><strong>3-Year Easy Installment Plans</strong> starting from PKR 35,000/mo</span>
-              </div>
-              <div class="welcome-perk-item">
-                <span class="welcome-icon">&#10003;</span>
-                <span><strong>15% Reserved Quota</strong> for KUST Faculty, Staff, &amp; Alumni</span>
-              </div>
-              <div class="welcome-perk-item">
-                <span class="welcome-icon">&#10003;</span>
-                <span><strong>Free VIP Site Tour</strong> with dedicated society transport</span>
-              </div>
-            </div>
-
-            <div class="welcome-actions">
-              <button class="btn btn-gold btn-lg w-100 btn-shimmer" onclick="acceptWelcomeOffer()">Claim Launch Offer &amp; Book Now</button>
-              <a href="https://wa.me/923360606905?text=Hello%20KUST%20Housing%20Society,%20I%20am%20interested%20in%20allotment" target="_blank" rel="noopener" class="btn-whatsapp-welcome">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                Chat on WhatsApp (+92 336 0606905)
-              </a>
-              <div class="welcome-secondary-actions">
-                <button class="welcome-link-btn" onclick="triggerBrochureDownload(); closeWelcomeModal();">Download Master Brochure (PDF)</button>
-                <span class="sep-dot">•</span>
-                <button class="welcome-link-btn" onclick="switchPage('masterplan'); closeWelcomeModal();">View Master Plan</button>
-              </div>
-            </div>
-
-            <div class="welcome-footer-note">
-              <label class="welcome-checkbox-label">
-                <input type="checkbox" id="dontShowWelcomeAgain">
-                <span>Don't show this announcement again today</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Window Status Bar -->
-      <div class="window-statusbar">
-        <span>● KHS Official Node Verified</span>
-        <span>Hotline &amp; WhatsApp: +92 336 0606905</span>
       </div>
     </div>
   </div>
